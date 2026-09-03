@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>TAPYACH | أسطورة رولكس دايتونا كوزموغراف في الجزائر</title>
+    <title>TAPYACH | أسطورة الدايتونا - توقيع الهيبة والمكانة في الجزائر</title>
     
-    <!-- Meta OpenGraph for High-Ticket Meta Ads -->
-    <meta property="og:title" content="TAPYACH | ساعة رولكس دايتونا الفاخرة">
-    <meta property="og:description" content="توقيع هيبتك ومكانتك الأولى. إصدار الكرونوغراف الملكي المحدود متوفر الآن في الجزائر مع الدفع عند الاستلام.">
+    <!-- Meta Tags for High-Ticket Algerian Meta/TikTok Ads -->
+    <meta property="og:title" content="TAPYACH | ساعة دايتونا النخبوية">
+    <meta property="og:description" content="ليست مجرد ساعة لمعرفة الوقت، بل إعلان صامت عن نجاحك وهيبتك في كل مجلس. الدفع بعد المعاينة في 58 ولاية.">
     <meta property="og:type" content="product">
     
-    <!-- Tailwind CSS (Fast, Mobile-Optimized) -->
+    <!-- Tailwind CSS (Fast & Lightweight) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
@@ -20,24 +20,23 @@
                 extend: {
                     colors: {
                         rolex: {
-                            950: '#01100b',
-                            900: '#021811',
+                            950: '#010f0b',
+                            900: '#021a12',
                             800: '#042e20',
                             700: '#064430',
-                            600: '#006039',
                             emerald: '#004733'
                         },
                         gold: {
-                            200: '#FFF4C2',
+                            100: '#FFF9DB',
+                            200: '#FFF3BF',
                             300: '#F5E7A3',
                             400: '#E5C158',
                             500: '#D4AF37',
                             600: '#AA8822',
                             700: '#7E6313'
                         },
-                        obsidian: '#070809',
-                        carbon: '#111317',
-                        slateCard: '#16191f'
+                        carbon: '#0c0e11',
+                        cardDark: '#12151a'
                     },
                     fontFamily: {
                         cairo: ['Cairo', 'sans-serif'],
@@ -54,31 +53,26 @@
         * { -webkit-tap-highlight-color: transparent; }
         body {
             font-family: 'Cairo', sans-serif;
-            background-color: #070809;
+            background-color: #060708;
             color: #f3f4f6;
             overflow-x: hidden;
         }
 
         /* Gold Gradient Text */
         .text-gradient-gold {
-            background: linear-gradient(135deg, #FFF6D1 0%, #D4AF37 45%, #AA8822 80%, #6E540C 100%);
+            background: linear-gradient(135deg, #FFF6D1 0%, #D4AF37 45%, #AA8822 85%, #6E540C 100%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
         }
 
-        /* Metallic Gold Border */
-        .gold-border-gradient {
-            border-image: linear-gradient(to bottom right, #D4AF37, #44340c, #D4AF37) 1;
-        }
-
-        /* Shimmering High-Ticket Button */
+        /* Emerald-Gold Glow Shimmer */
         .btn-luxury-glow {
             position: relative;
-            background: linear-gradient(135deg, #d4af37 0%, #fef3c7 40%, #b38b22 100%);
+            background: linear-gradient(135deg, #d4af37 0%, #fff2be 35%, #b38b22 100%);
             background-size: 200% 200%;
             animation: luxuryShimmer 3.5s ease infinite, luxuryPulse 2.2s infinite;
-            box-shadow: 0 0 30px rgba(212, 175, 55, 0.45), inset 0 0 12px rgba(255,255,255,0.7);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.4), inset 0 0 12px rgba(255,255,255,0.7);
         }
         @keyframes luxuryShimmer {
             0% { background-position: 0% 50%; }
@@ -90,7 +84,7 @@
             50% { transform: scale(1.025); }
         }
 
-        /* WhatsApp Animated Neon Glow & Light Wave */
+        /* WhatsApp Animated Neon Pulse */
         .whatsapp-glow {
             animation: whatsappPulse 1.8s infinite;
             box-shadow: 0 0 25px #25D366, 0 0 50px rgba(37, 211, 102, 0.5), inset 0 0 10px rgba(255,255,255,0.4);
@@ -104,7 +98,7 @@
         /* Top Notification Slide Down */
         .top-notification {
             position: fixed;
-            top: -120px;
+            top: -130px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 9999;
@@ -113,32 +107,27 @@
             max-width: 440px;
         }
         .top-notification.show {
-            top: 12px;
+            top: 14px;
         }
 
-        /* Offer Card Active Effect */
+        /* Offer Card Transition */
         .offer-card {
-            border: 2px solid #272a30;
+            border: 2px solid #23272f;
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .offer-card.active {
             border-color: #D4AF37;
-            background: linear-gradient(180deg, rgba(4,46,32,0.7) 0%, rgba(17,19,23,0.95) 100%);
+            background: linear-gradient(180deg, rgba(4,46,32,0.7) 0%, rgba(18,21,26,0.95) 100%);
             box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
-        }
-
-        /* Hotspot Pulse */
-        .hotspot-pulse {
-            animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
         }
     </style>
 
     <!-- ======================================================= -->
-    <!-- 🎯 1. PIXEL & TRACKING CODES (META & TIKTOK)            -->
+    <!-- 🎯 1. PIXEL & TRACKING PLACEHOLDERS (META & TIKTOK)     -->
     <!-- ======================================================= -->
     <script>
         // --------------------------------------------------------
-        // ضع كود META PIXEL هنا
+        // أدخل كود META PIXEL هنا
         // --------------------------------------------------------
         const META_PIXEL_ID = "YOUR_META_PIXEL_ID"; 
         if(META_PIXEL_ID !== "YOUR_META_PIXEL_ID") {
@@ -156,13 +145,13 @@
     </script>
     <script>
         // --------------------------------------------------------
-        // ضع كود TIKTOK PIXEL هنا إذا كنت تستخدم إعلانات تيك توك
+        // أدخل كود TIKTOK PIXEL هنا إذا وُجد
         // --------------------------------------------------------
     </script>
 </head>
 <body class="selection:bg-gold-500 selection:text-black pb-32">
 
-    <!-- TOP SOCIAL PROOF NOTIFICATION (SLIDES FROM TOP) -->
+    <!-- TOP SOCIAL PROOF NOTIFICATION (SLIDES DOWN SMOOTHLY FROM TOP) -->
     <div id="topNotification" class="top-notification bg-rolex-950/95 border border-gold-500/60 backdrop-blur-2xl p-3.5 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.9)] flex items-center justify-between">
         <div class="flex items-center space-x-3 space-x-reverse">
             <div class="relative">
@@ -173,13 +162,13 @@
             </div>
             <div>
                 <p class="text-xs text-gold-300 font-bold" id="notifPerson">أمين من سطيف (حي الهضاب)</p>
-                <p class="text-[12px] font-bold text-white tracking-tight" id="notifAction">اقتنى العرض الملكي VIP الكامل (9900 دج)</p>
+                <p class="text-[12px] font-bold text-white tracking-tight" id="notifAction">حجز العرض الملكي VIP الكامل (9900 دج)</p>
             </div>
         </div>
         <span class="text-[10px] text-gray-400 bg-white/5 px-2.5 py-1 rounded-full border border-white/10 flex-shrink-0" id="notifTime">منذ 3 د</span>
     </div>
 
-    <!-- VIP SCARCITY & LIVE VISITORS TOP BAR -->
+    <!-- VIP TOP BAR: SCARCITY & REAL-TIME ALGERIAN TRAFFIC -->
     <header class="bg-gradient-to-r from-rolex-950 via-rolex-900 to-rolex-950 border-b border-gold-500/30 py-2.5 px-3 sticky top-0 z-40 backdrop-blur-xl">
         <div class="max-w-md mx-auto flex items-center justify-between text-[11px]">
             <div class="flex items-center text-gold-300 font-bold">
@@ -187,119 +176,103 @@
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
                 </span>
-                <span>👀 34 يتصفحون الآن من الجزائر</span>
+                <span>👀 37 شخصاً يتصفحون الآن من الجزائر</span>
             </div>
             <div class="text-gray-300 flex items-center">
-                <i class="fas fa-stopwatch text-gold-400 ml-1"></i>
-                <span>ينتهي العرض في: <b id="countdownTimer" class="text-gold-300 font-mono font-bold">03:41:19</b></span>
+                <i class="fas fa-hourglass-half text-gold-400 ml-1"></i>
+                <span>ينتهي التوصيل المجاني في: <b id="countdownTimer" class="text-gold-300 font-mono font-bold">02:49:15</b></span>
             </div>
         </div>
     </header>
 
-    <!-- MOBILE STICKY BOTTOM CONVERSION BAR -->
+    <!-- MOBILE STICKY BOTTOM CONVERSION BAR (ALWAYS VISIBLE) -->
     <div id="mobileBottomBar" class="fixed bottom-0 left-0 right-0 z-40 p-3 bg-rolex-950/95 border-t border-gold-500/40 backdrop-blur-xl flex items-center justify-between shadow-[0_-10px_35px_rgba(0,0,0,0.9)]">
         <div>
             <div class="flex items-center space-x-1.5 space-x-reverse">
                 <span class="text-base font-black text-gradient-gold" id="stickyPriceText">9,900 دج</span>
                 <span class="text-[10px] text-gray-400 line-through">14,500 دج</span>
             </div>
-            <span class="text-[10px] text-emerald-400 font-bold block" id="stickyBadgeText">✨ باقة VIP + توصيل مجاني</span>
+            <span class="text-[10px] text-emerald-400 font-bold block" id="stickyBadgeText">👑 العرض الملكي + توصيل مجاني</span>
         </div>
         <a href="#checkoutSection" class="btn-luxury-glow text-black font-black text-xs py-3.5 px-5 rounded-xl flex items-center justify-center shadow-lg active:scale-95 transition-transform">
-            <span>احجز ساعتك الآن</span>
+            <span>احجز قطعتك الآن</span>
             <i class="fas fa-arrow-down mr-1.5 text-xs"></i>
         </a>
     </div>
 
-    <!-- FLOATING VIP CONCIERGE BUTTON (BEFORE PURCHASE CONSULTATION) -->
-    <a href="https://wa.me/213555000000?text=مرحباً،%20لدي%20استفسار%20حول%20ساعة%20رولكس%20دايتونا%20TAPYACH" 
-       target="_blank" 
-       class="fixed bottom-20 left-4 z-30 bg-black/80 border border-emerald-500/60 backdrop-blur-md text-emerald-400 p-2.5 rounded-full shadow-2xl flex items-center space-x-2 space-x-reverse hover:scale-105 transition-all">
-        <i class="fab fa-whatsapp text-2xl text-[#25D366]"></i>
-        <span class="text-[11px] font-bold text-white pr-1 pl-2">استشارة خبير</span>
-    </a>
-
-    <!-- MAIN WRAPPER (MOBILE-FIRST 100%) -->
+    <!-- MAIN CONTAINER (100% MOBILE-FIRST OPTIMIZED) -->
     <div id="landingView" class="max-w-md mx-auto px-4 pt-3">
 
-        <!-- BRAND & ROYAL LOGO -->
+        <!-- BRAND & CREST -->
         <div class="text-center my-2">
             <div class="inline-flex flex-col items-center">
-                <div class="relative">
-                    <i class="fas fa-crown text-3xl text-gold-500 drop-shadow-[0_0_15px_rgba(212,175,55,0.8)]"></i>
-                </div>
-                <h1 class="text-2xl font-black tracking-[0.25em] text-white uppercase mt-1">TAPYACH</h1>
-                <span class="text-[9px] text-gold-300/80 tracking-[0.4em] uppercase font-bold">GENÈVE • HAUTE HORLOGERIE</span>
+                <i class="fas fa-crown text-3xl text-gold-500 drop-shadow-[0_0_15px_rgba(212,175,55,0.8)]"></i>
+                <h1 class="text-2xl font-black tracking-[0.3em] text-white uppercase mt-1">TAPYACH</h1>
+                <span class="text-[9px] text-gold-300/80 tracking-[0.4em] uppercase font-bold">L'ÉLITE HORLOGÈRE • ALGER</span>
             </div>
         </div>
 
-        <!-- [A] ATTENTION: STATUS & PRESTIGE HOOK -->
+        <!-- [A] ATTENTION: STATUS & PRESTIGE HOOK (ZERO TECH SPECS) -->
         <div class="text-center space-y-2 mb-4">
             <div class="inline-flex items-center bg-rolex-900/90 border border-gold-500/40 px-3 py-1 rounded-full text-[11px] font-bold text-gold-300">
-                <i class="fas fa-award ml-1.5 text-gold-400"></i> الإصدار الخاص لنخبة رجال الأعمال 2026
+                <i class="fas fa-certificate ml-1.5 text-gold-400"></i> الرمز الأيقوني لأصحاب النفوذ والقرارات
             </div>
             
             <h2 class="text-[23px] font-black leading-snug text-white">
-                هناك من يرتدي ساعة ليعرف الوقت.. <br>
-                <span class="text-gradient-gold">وهناك من يرتديها ليتحكّم في وقته وهيبته.</span>
+                الرجال الناجحون لا يرتدون ساعة لمعرفة الوقت.. <br>
+                <span class="text-gradient-gold">بل يرتدونها ليفرضوا احترامهم وحضورهم في كل مجلس.</span>
             </h2>
             
             <p class="text-xs text-gray-300 leading-relaxed px-1">
-                التحفة الأكثر شهرة وطلباً في تاريخ الساعات الفاخرة: <b>Rolex Cosmograph Daytona</b>. ثقل المعصم الملكي، لمعان الذهب، ودقة تفاصيل تحبس الأنفاس في نسختها الأرقى بالجزائر.
+                ساعة <b>Cosmograph Daytona</b> ليست مجرد أكسسوار، بل بطاقة هويتك غير المعلنة. التوقيع الصامت الذي يعلن عن مكانتك، ثقتك، وذوقك الرفيع قبل أن تنطق بأي كلمة.
             </p>
         </div>
 
         <!-- ======================================================= -->
-        <!-- 📸 2. SMART AUTO & MANUAL TOUCH SLIDER WITH HOTSPOTS   -->
+        <!-- 📸 2. SMART LUXURY SLIDER (MANUAL + AUTO + TOUCH SWIPE) -->
         <!-- ======================================================= -->
         <div class="relative bg-carbon border border-gold-500/40 rounded-3xl p-2.5 overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.95)] mb-6">
             
-            <!-- Slider Viewport -->
             <div class="relative w-full h-[370px] rounded-2xl overflow-hidden bg-black" id="sliderContainer">
                 
-                <!-- SLIDE 1: MAIN EMERALD & GOLD DIAL -->
+                <!-- SLIDE 1: AURA & PRESENCE -->
                 <div class="slider-item absolute inset-0 transition-opacity duration-700 opacity-100 flex items-center justify-center">
+                    <!-- 📸 IMAGE PLACEHOLDER 1: PUT YOUR BEST HIGH-RES DIAL PHOTO HERE -->
                     <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=85" 
-                         alt="Rolex Daytona TAPYACH Dial" 
+                         alt="TAPYACH Luxury Daytona Watch" 
                          class="w-full h-full object-cover select-none">
                     
-                    <!-- Interactive Hotspot on Dial -->
-                    <div class="absolute top-[48%] left-[48%] z-20 group">
-                        <span class="relative flex h-5 w-5">
-                            <span class="hotspot-pulse absolute inline-flex h-full w-full rounded-full bg-gold-400 opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-5 w-5 bg-gold-500/90 border border-white text-[9px] text-black font-black items-center justify-center cursor-pointer shadow-lg">+</span>
-                        </span>
-                        <div class="absolute -top-12 -left-20 bg-black/90 border border-gold-400 text-[10px] text-gold-200 px-2.5 py-1 rounded-md whitespace-nowrap shadow-xl">
-                            عقارب كرونوغراف كاملة النشاط
-                        </div>
-                    </div>
-
-                    <div class="absolute bottom-3 left-3 bg-rolex-950/80 backdrop-blur-md px-3 py-1 rounded-full border border-gold-500/40 text-[10px] text-gold-300 font-bold">
-                        🟢 الميناء الزمردي الأخضر مع الذهب
+                    <div class="absolute bottom-3 left-3 bg-rolex-950/85 backdrop-blur-md px-3 py-1.5 rounded-full border border-gold-500/40 text-[10px] text-gold-300 font-bold flex items-center">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 ml-1.5"></span>
+                        الهيبة الملكية على المعصم
                     </div>
                 </div>
 
-                <!-- SLIDE 2: CERAMIC TACHYMETER BEZEL -->
+                <!-- SLIDE 2: THE WRIST IMPACT -->
                 <div class="slider-item absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
+                    <!-- 📸 IMAGE PLACEHOLDER 2: PUT WRISTSHOT / DETAIL PHOTO HERE -->
                     <img src="https://images.unsplash.com/photo-1547996160-71dfabb1a7b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=85" 
-                         alt="Rolex Daytona Ceramic Bezel" 
+                         alt="Rolex Daytona Wrist Presence" 
                          class="w-full h-full object-cover select-none">
-                    <div class="absolute bottom-3 left-3 bg-rolex-950/80 backdrop-blur-md px-3 py-1 rounded-full border border-gold-500/40 text-[10px] text-gold-300 font-bold">
-                        🛡️ إطار تاكيمتر سيراميكي مقاوم للاحتكاك
+                    <div class="absolute bottom-3 left-3 bg-rolex-950/85 backdrop-blur-md px-3 py-1.5 rounded-full border border-gold-500/40 text-[10px] text-gold-300 font-bold flex items-center">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 ml-1.5"></span>
+                        لمعان يلفت الأنظار في كل مصافحة
                     </div>
                 </div>
 
-                <!-- SLIDE 3: LUXURY BOX & UNBOXING -->
+                <!-- SLIDE 3: VIP WOODEN BOX -->
                 <div class="slider-item absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
+                    <!-- 📸 IMAGE PLACEHOLDER 3: PUT LUXURY BOX & UNBOXING PHOTO HERE -->
                     <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=85" 
-                         alt="TAPYACH Luxury Box & Guarantee Card" 
+                         alt="VIP Luxury Packaging" 
                          class="w-full h-full object-cover select-none">
-                    <div class="absolute bottom-3 left-3 bg-rolex-950/80 backdrop-blur-md px-3 py-1 rounded-full border border-gold-500/40 text-[10px] text-gold-300 font-bold">
-                        🎁 العلبة الخشبية الملكية مع بطاقة VIP
+                    <div class="absolute bottom-3 left-3 bg-rolex-950/85 backdrop-blur-md px-3 py-1.5 rounded-full border border-gold-500/40 text-[10px] text-gold-300 font-bold flex items-center">
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 ml-1.5"></span>
+                        تجربة فتح الصندوق الملكي الخشبي
                     </div>
                 </div>
 
-                <!-- SLIDER NAVIGATION (MANUAL) -->
+                <!-- MANUAL NAVIGATION BUTTONS -->
                 <button onclick="prevSlide()" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/60 border border-gold-500/40 text-gold-300 flex items-center justify-center backdrop-blur-md active:scale-90 transition-all z-20">
                     <i class="fas fa-chevron-right text-xs"></i>
                 </button>
@@ -307,7 +280,7 @@
                     <i class="fas fa-chevron-left text-xs"></i>
                 </button>
 
-                <!-- SLIDER DOTS -->
+                <!-- DOTS -->
                 <div class="absolute bottom-3 right-3 flex space-x-1.5 space-x-reverse z-20" id="sliderDots">
                     <span class="w-4 h-1.5 rounded-full bg-gold-400"></span>
                     <span class="w-1.5 h-1.5 rounded-full bg-gray-600"></span>
@@ -315,107 +288,110 @@
                 </div>
             </div>
 
-            <!-- Value Mini Badges -->
+            <!-- Privilege Badges -->
             <div class="grid grid-cols-3 gap-2 mt-3 pt-2.5 border-t border-white/10 text-center text-[10px] text-gray-300">
-                <div class="flex items-center justify-center"><i class="fas fa-gem text-gold-400 ml-1"></i> زجاج سافير ياقوتي</div>
-                <div class="flex items-center justify-center"><i class="fas fa-shield-alt text-gold-400 ml-1"></i> ضمان 12 شهراً</div>
-                <div class="flex items-center justify-center"><i class="fas fa-box-open text-gold-400 ml-1"></i> المعاينة قبل الدفع</div>
+                <div class="flex items-center justify-center"><i class="fas fa-hand-holding-heart text-gold-400 ml-1"></i> إحساس الفخامة والوزن</div>
+                <div class="flex items-center justify-center"><i class="fas fa-shield-alt text-gold-400 ml-1"></i> ضمان كامل لمدة سنة</div>
+                <div class="flex items-center justify-center"><i class="fas fa-box-open text-gold-400 ml-1"></i> عاينها بيدك قبل الدفع</div>
             </div>
         </div>
 
-        <!-- [I] INTEREST: THE STORYTELLING OF POWER & RACING -->
-        <section class="bg-gradient-to-b from-rolex-900/80 via-carbon to-obsidian border border-gold-500/30 rounded-3xl p-5 mb-6 shadow-xl relative overflow-hidden">
+        <!-- [I] INTEREST: THE PSYCHOLOGY OF POWER & AURA -->
+        <section class="bg-gradient-to-b from-rolex-900/80 via-carbon to-black border border-gold-500/30 rounded-3xl p-5 mb-6 shadow-xl relative overflow-hidden">
             <div class="absolute -right-8 -top-8 w-36 h-36 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
 
             <div class="flex items-center space-x-2 space-x-reverse mb-3">
                 <div class="w-8 h-8 rounded-lg bg-gold-500/20 flex items-center justify-center text-gold-400">
-                    <i class="fas fa-flag-checkered text-sm"></i>
+                    <i class="fas fa-chess-king text-sm"></i>
                 </div>
-                <h3 class="text-base font-black text-white">القصة التي جعلت دايتونا أيقونة العظماء</h3>
+                <h3 class="text-base font-black text-white">سر الجاذبية التي لا تُقاوم</h3>
             </div>
 
             <div class="space-y-3 text-xs leading-relaxed text-gray-300">
                 <p>
-                    في ستينيات القرن الماضي، صُممت دايتونا خصيصاً لسائقي سباقات السيارات المحترفين الذين تتوقف حياتهم على أجزاء من الثانية. ولكن بفضل هيبتها الفائقة وتصميمها الثوري، سرعان ما استقرت على معاصم أشهر رؤساء الدول، قادة الأعمال، والرياضيين التاريخيين.
+                    هناك فارق شاسع بين رجل يدخل القاعة فيمر مر الكرام، ورجل حين يمد يده للمصافحة أو يضع معصمه على الطاولة، تتوجه إليه الأنظار وتُفتح له الأبواب باحترام تلقائي.
                 </p>
                 <div class="p-3 bg-black/60 rounded-xl border-r-4 border-gold-500 text-gold-200 italic font-semibold">
-                    "في الجزائر، عندما تجلس في طاولة مفاوضات أو مناسبة عائلية مرموقة، ساعتك هي أول ما يلفت الانتباه ويعلن عن مستواك بدون كلمة واحدة."
+                    "الناس يحكمون على نجاحك وقيمتك في أول 7 ثوانٍ.. وساعتك هي الرسالة الأولى والأقوى التي يرونها."
                 </div>
                 <p>
-                    مع <b>TAPYACH</b>، لا نبيعك مجرد أكسسوار، بل نمنحك نفس التجربة البصرية، الوزن الصلب، والإحساس الفاخر الذي يستحقه كل رجل طموح وناجح.
+                    علامة <b>TAPYACH</b> تقدم لك هذا الشعور الملكي: الثقل المحترم الذي يذكرك كل دقيقة بأنك تستحق الأفضل، والبريق الراقي الذي يجعل زملاءك، شركاءك وأصدقاءك يسألونك بفضول: <i>"من أين حصلت عليها؟"</i>.
                 </p>
             </div>
         </section>
 
-        <!-- [D] DESIRE: THE EXCLUSIVE FEATURES (لماذا هذه النسخة تختلف؟) -->
+        <!-- [D] DESIRE: EMOTIONAL IMPACT IN YOUR LIFE (ZERO BORING SPECS) -->
         <section class="space-y-3 mb-6">
-            <h3 class="text-center text-base font-black text-gradient-gold mb-3">هندسة تفوق كل التوقعات</h3>
+            <h3 class="text-center text-base font-black text-gradient-gold mb-3">ماذا تمنحك هذه التحفة في يومك؟</h3>
 
-            <div class="bg-slateCard border border-white/10 rounded-2xl p-4 flex items-start space-x-3 space-x-reverse">
+            <!-- Impact 1 -->
+            <div class="bg-cardDark border border-white/10 rounded-2xl p-4 flex items-start space-x-3 space-x-reverse">
                 <div class="w-10 h-10 rounded-xl bg-rolex-800 border border-gold-500/40 flex-shrink-0 flex items-center justify-center text-gold-400 text-base">
-                    <i class="fas fa-magnet"></i>
+                    <i class="fas fa-handshake"></i>
                 </div>
                 <div>
-                    <h4 class="text-xs font-bold text-white mb-1">فولاذ مقاوم للصدأ 904L مع طلاء PVD ذهبي مصفح</h4>
-                    <p class="text-[11px] text-gray-400 leading-normal">نفس المعدن المستخدم في صناعة الطائرات، مقاوم تماماً للعرق، الصدأ، وتغير اللون مع مرور السنوات.</p>
+                    <h4 class="text-xs font-bold text-white mb-1">كاريزما طاغية في اجتماعات العمل والمفاوضات</h4>
+                    <p class="text-[11px] text-gray-400 leading-normal">تمنحك ثقة داخلية استثنائية تعزز لغة جسدك، لتترك انطباع الشخص الحاسم والمحترف الذي لا يرضى إلا بالقمة.</p>
                 </div>
             </div>
 
-            <div class="bg-slateCard border border-white/10 rounded-2xl p-4 flex items-start space-x-3 space-x-reverse">
+            <!-- Impact 2 -->
+            <div class="bg-cardDark border border-white/10 rounded-2xl p-4 flex items-start space-x-3 space-x-reverse">
                 <div class="w-10 h-10 rounded-xl bg-rolex-800 border border-gold-500/40 flex-shrink-0 flex items-center justify-center text-gold-400 text-base">
-                    <i class="fas fa-clock"></i>
+                    <i class="fas fa-gift"></i>
                 </div>
                 <div>
-                    <h4 class="text-xs font-bold text-white mb-1">حركة كرونوغراف يابانية دقيقة بالثواني</h4>
-                    <p class="text-[11px] text-gray-400 leading-normal">ليست مجرد عقارب ثابتة، كل عداد داخلي يعمل بانسيابية تامة لقياس الوقت بدقة متناهية.</p>
+                    <h4 class="text-xs font-bold text-white mb-1">الهدية الملكية التي تُخلد في الذاكرة</h4>
+                    <p class="text-[11px] text-gray-400 leading-normal">إذا كنت تهديها لنفسك كمكافأة على إنجازاتك، أو لشخص عزيز (والد، أخ، أو شريك نجاح)، فالعلبة الخشبية الفاخرة تعبر عن أقصى درجات التقدير والمحبة.</p>
                 </div>
             </div>
 
-            <div class="bg-slateCard border border-white/10 rounded-2xl p-4 flex items-start space-x-3 space-x-reverse">
+            <!-- Impact 3 -->
+            <div class="bg-cardDark border border-white/10 rounded-2xl p-4 flex items-start space-x-3 space-x-reverse">
                 <div class="w-10 h-10 rounded-xl bg-rolex-800 border border-gold-500/40 flex-shrink-0 flex items-center justify-center text-gold-400 text-base">
-                    <i class="fas fa-eye"></i>
+                    <i class="fas fa-star"></i>
                 </div>
                 <div>
-                    <h4 class="text-xs font-bold text-white mb-1">إضاءة ليلية Chromalight زرقاء ثاقبة</h4>
-                    <p class="text-[11px] text-gray-400 leading-normal">مؤشرات تمتص الضوء نهاراً لتتوهج بلون أزرق ساحر في الظلام، تمنحك قراءة واضحة وهيبة ليلية لا تُنسى.</p>
+                    <h4 class="text-xs font-bold text-white mb-1">إطلالة متكاملة في المناسبات والأعراس</h4>
+                    <p class="text-[11px] text-gray-400 leading-normal">تتناغم ببراعة فائقة سواء كنت ترتدي بدلة رسمية كلاسيكية أو لباساً أنيقاً، لتكون ساعتك هي القطعة المركزية التي تخطف الأضواء.</p>
                 </div>
             </div>
         </section>
 
-        <!-- ⚡ THE COMPARISON MATRIX: TAPYACH VS CHEAP MARKET REPLICAS -->
+        <!-- ⚡ PSYCHOLOGICAL COMPARISON: ORDINARY VS TAPYACH ELITE -->
         <section class="bg-carbon border border-gold-600/30 rounded-3xl p-4 mb-6 shadow-2xl">
-            <h3 class="text-sm font-black text-center text-gold-300 mb-1">لماذا سعرنا يعكس القيمة الحقيقية؟</h3>
-            <p class="text-[10px] text-gray-400 text-center mb-4">مقارنة بسيطة تكشف لك الفرق بين النسخة الملكية وساعات السوق الرديئة</p>
+            <h3 class="text-sm font-black text-center text-gold-300 mb-1">الفرق بين أن تكون عادياً.. أو استثنائياً</h3>
+            <p class="text-[10px] text-gray-400 text-center mb-4">لماذا يفضل أصحاب الذوق الرفيع إصدار TAPYACH؟</p>
 
             <div class="overflow-x-auto">
                 <table class="w-full text-right text-xs">
                     <thead>
                         <tr class="border-b border-white/10 text-[11px]">
-                            <th class="py-2 text-gray-400">المواصفة</th>
-                            <th class="py-2 text-gold-400 font-black">نسخة TAPYACH الملكية</th>
-                            <th class="py-2 text-red-400 font-bold">ساعات السوق المقلدة</th>
+                            <th class="py-2 text-gray-400">التجربة</th>
+                            <th class="py-2 text-gold-400 font-black">إصدار TAPYACH الملكي</th>
+                            <th class="py-2 text-red-400 font-bold">الساعات التجارية العادية</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-white/5 text-[10px]">
                         <tr>
-                            <td class="py-2.5 font-bold text-gray-300">جودة المعدن</td>
-                            <td class="py-2.5 text-emerald-400 font-bold"><i class="fas fa-check ml-1"></i> فولاذ 904L ثقيل وصلب</td>
-                            <td class="py-2.5 text-gray-500"><i class="fas fa-times ml-1"></i> حديد خفيف يبهت لونه</td>
+                            <td class="py-2.5 font-bold text-gray-300">الانطباع الأول</td>
+                            <td class="py-2.5 text-emerald-400 font-bold"><i class="fas fa-check ml-1"></i> يلفت النظر والكل يسألك عنها</td>
+                            <td class="py-2.5 text-gray-500"><i class="fas fa-times ml-1"></i> باهت ولا ينتبه له أحد</td>
                         </tr>
                         <tr>
-                            <td class="py-2.5 font-bold text-gray-300">الزجاج الأمامي</td>
-                            <td class="py-2.5 text-emerald-400 font-bold"><i class="fas fa-check ml-1"></i> زجاج سافير ضد الخدش</td>
-                            <td class="py-2.5 text-gray-500"><i class="fas fa-times ml-1"></i> زجاج عادي سريع الكسر</td>
+                            <td class="py-2.5 font-bold text-gray-300">الإحساس بالمعصم</td>
+                            <td class="py-2.5 text-emerald-400 font-bold"><i class="fas fa-check ml-1"></i> ثقل ملكي يمنحك هيبة وراحة</td>
+                            <td class="py-2.5 text-gray-500"><i class="fas fa-times ml-1"></i> خفيف ومحرج يُشعر بالرداءة</td>
                         </tr>
                         <tr>
-                            <td class="py-2.5 font-bold text-gray-300">عدادات الكرونوغراف</td>
-                            <td class="py-2.5 text-emerald-400 font-bold"><i class="fas fa-check ml-1"></i> شغالة ومتحركة بدقة</td>
-                            <td class="py-2.5 text-gray-500"><i class="fas fa-times ml-1"></i> مجرد رسمة أو ديكور جامد</td>
+                            <td class="py-2.5 font-bold text-gray-300">قيمة التقديم كهدية</td>
+                            <td class="py-2.5 text-emerald-400 font-bold"><i class="fas fa-check ml-1"></i> ترفع رأسك وتبهر من يستلمها</td>
+                            <td class="py-2.5 text-gray-500"><i class="fas fa-times ml-1"></i> عادية وتفقد قيمتها بسرعة</td>
                         </tr>
                         <tr>
-                            <td class="py-2.5 font-bold text-gray-300">المعاينة قبل الدفع</td>
-                            <td class="py-2.5 text-emerald-400 font-bold"><i class="fas fa-check ml-1"></i> افتح الطرد وافحص بيدك</td>
-                            <td class="py-2.5 text-gray-500"><i class="fas fa-times ml-1"></i> ممنوع الفتح قبل السداد</td>
+                            <td class="py-2.5 font-bold text-gray-300">راحة البال</td>
+                            <td class="py-2.5 text-emerald-400 font-bold"><i class="fas fa-check ml-1"></i> تفتح الطرد وتتفقدها قبل الدفع</td>
+                            <td class="py-2.5 text-gray-500"><i class="fas fa-times ml-1"></i> تدفع أولاً في مجهول ومخاطرة</td>
                         </tr>
                     </tbody>
                 </table>
@@ -425,13 +401,13 @@
         <!-- REAL HUMAN ALGERIAN SOCIAL PROOF (BALANCED & AUTHENTIC) -->
         <section class="mb-6">
             <div class="text-center mb-4">
-                <span class="text-[10px] text-gold-400 font-bold uppercase tracking-widest">تجارب حقيقية من ولايات الجزائر</span>
-                <h3 class="text-base font-black text-white">ماذا يقول من اقتنوا ساعتنا؟</h3>
+                <span class="text-[10px] text-gold-400 font-bold uppercase tracking-widest">تجارب موثوقة من ولايات الجزائر</span>
+                <h3 class="text-base font-black text-white">ماذا قال عملاؤنا بعد استلام طرودهم؟</h3>
             </div>
 
             <div class="space-y-3">
                 <!-- Review 1: Batna -->
-                <div class="bg-slateCard border border-white/10 rounded-2xl p-3.5">
+                <div class="bg-cardDark border border-white/10 rounded-2xl p-3.5">
                     <div class="flex items-center justify-between mb-2">
                         <div class="flex items-center space-x-2 space-x-reverse">
                             <div class="w-8 h-8 rounded-full bg-rolex-800 flex items-center justify-center text-white text-xs font-black">
@@ -447,12 +423,12 @@
                         </div>
                     </div>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                        "صحيتو بزاف على المصداقية. الساعة ثقيلة في اليد والميناء الأخضر مع الذهب يعطي منظر هيبة بزااف. التوصيل كان سريع لباتنة وعامل التوصيل خلاني فتحت العلبة وشفتها على راحتي قبل ما نخلص."
+                        "السلام عليكم، الحق يقال الساعة فيها هيبة كبيرة في اليد وما تبانش خلاص بلي شريتها بهذا السعر. لي يشوفها عندي يسقسيني عليها. والأهم أن الليفرو خلاني شفتها وتأكدت منها براحتي قبل ما نخلص."
                     </p>
                 </div>
 
                 <!-- Review 2: Alger -->
-                <div class="bg-slateCard border border-white/10 rounded-2xl p-3.5">
+                <div class="bg-cardDark border border-white/10 rounded-2xl p-3.5">
                     <div class="flex items-center justify-between mb-2">
                         <div class="flex items-center space-x-2 space-x-reverse">
                             <div class="w-8 h-8 rounded-full bg-rolex-800 flex items-center justify-center text-white text-xs font-black">
@@ -460,7 +436,7 @@
                             </div>
                             <div>
                                 <h4 class="text-xs font-bold text-white">ياسين بن عودة</h4>
-                                <p class="text-[10px] text-gray-400">الجزائر (سعيد حمدين) • مهندس دولة</p>
+                                <p class="text-[10px] text-gray-400">الجزائر (سعيد حمدين) • مهندس</p>
                             </div>
                         </div>
                         <div class="text-gold-400 text-xs">
@@ -468,35 +444,35 @@
                         </div>
                     </div>
                     <p class="text-xs text-gray-300 leading-relaxed">
-                        "خيار العرض الملكي بـ 9900 دج يستاهل كل دينار، العلبة الخشبية الخضراء فاخرة لدرجة أنك تقدر تقدمها مباشرة كهدية فخمة. أنصح بها بدون تردد."
+                        "اخترت باقة 9900 دج والعلبة الخشبية زادت فيها النص، ديتها كهدية لصديق عزيز وفرح بيها بزاف. شكراً لكم على الاحترافية والسرعة في التوصيل."
                     </p>
                 </div>
             </div>
         </section>
 
         <!-- ======================================================= -->
-        <!-- [A] ACTION: ADVANCED CHECKOUT WITH PRICING & ESTIMATOR  -->
+        <!-- [A] ACTION: ADVANCED CHECKOUT WITH NO-BRAINER PRICING   -->
         <!-- ======================================================= -->
-        <section id="checkoutSection" class="bg-gradient-to-b from-rolex-900 via-obsidian to-black border-2 border-gold-500/50 rounded-3xl p-5 shadow-2xl mb-12 relative">
+        <section id="checkoutSection" class="bg-gradient-to-b from-rolex-900 via-carbon to-black border-2 border-gold-500/50 rounded-3xl p-5 shadow-2xl mb-12 relative">
             <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold-500 text-black text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-wider shadow-lg">
                 استمارة الحجز الرسمي
             </div>
 
             <div class="text-center mt-2 mb-6">
-                <h3 class="text-xl font-black text-gradient-gold">أدخل معلوماتك لتأكيد الشحن</h3>
-                <p class="text-xs text-gray-400 mt-1">الدفع يتم نقداً عند الاستلام بعد معاينة الطرد شخصياً.</p>
+                <h3 class="text-xl font-black text-gradient-gold">أدخل بياناتك لتجهيز شحنتك</h3>
+                <p class="text-xs text-gray-400 mt-1">الدفع يتم نقداً عند الاستلام بعد فتح الطرد ومعاينته بنفسك.</p>
             </div>
 
             <form id="luxuryOrderForm" onsubmit="handleOrderSubmit(event)" class="space-y-4">
                 
                 <!-- 1. CHOOSE OFFER (SMART DECOY PRICING) -->
                 <div class="space-y-2.5">
-                    <label class="block text-xs font-black text-gold-300">1. حدد باقتك المفضلة *</label>
+                    <label class="block text-xs font-black text-gold-300">1. حدد الباقة المفضلة لديك *</label>
 
-                    <!-- OFFER 2: VIP 9900 (THE BEST VALUE DECOY) -->
+                    <!-- OFFER 2: VIP 9900 (BEST VALUE DECOY) -->
                     <div id="cardOfferVIP" onclick="selectOffer('vip')" class="offer-card active rounded-2xl p-3.5 cursor-pointer relative bg-rolex-950/70">
                         <div class="absolute -top-2.5 left-3 bg-gradient-to-r from-red-600 to-amber-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow-lg flex items-center">
-                            <i class="fas fa-fire ml-1"></i> العرض الأكثر طلباً (توفير 1300 دج)
+                            <i class="fas fa-fire ml-1"></i> اختيار 95% من الزبائن (توفير 1300 دج)
                         </div>
                         <div class="flex items-center justify-between">
                             <div class="flex items-center space-x-2.5 space-x-reverse">
@@ -504,7 +480,7 @@
                                 <div>
                                     <h4 class="text-sm font-black text-white">العرض الملكي VIP الشامل</h4>
                                     <p class="text-[11px] text-gray-300 mt-0.5">ساعة دايتونا + علبة خشبية ملكية + بطاقة ضمان VIP</p>
-                                    <span class="text-[11px] text-emerald-400 font-bold block mt-1"><i class="fas fa-truck-fast ml-1"></i> التوصيل مجاني لكافة الولايات (0 دج)</span>
+                                    <span class="text-[11px] text-emerald-400 font-bold block mt-1"><i class="fas fa-truck-fast ml-1"></i> التوصيل مجاني 0 دج لكافة الولايات</span>
                                 </div>
                             </div>
                             <div class="text-left flex-shrink-0">
@@ -533,30 +509,30 @@
                     </div>
                 </div>
 
-                <!-- 2. CUSTOMER ADDRESS -->
+                <!-- 2. CUSTOMER DETAILS -->
                 <div class="pt-2 border-t border-white/10 space-y-3">
-                    <label class="block text-xs font-black text-gold-300">2. بيانات الاستلام في الجزائر *</label>
+                    <label class="block text-xs font-black text-gold-300">2. معلومات التوصيل في الجزائر *</label>
 
                     <div>
                         <input type="text" id="custName" required placeholder="الاسم واللقب بالكامل *" 
-                               class="w-full bg-obsidian border border-gray-700 focus:border-gold-500 rounded-xl px-3.5 py-3 text-sm text-white placeholder-gray-500 focus:outline-none transition-colors">
+                               class="w-full bg-black/80 border border-gray-700 focus:border-gold-500 rounded-xl px-3.5 py-3 text-sm text-white placeholder-gray-500 focus:outline-none transition-colors">
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                         <div>
-                            <input type="tel" id="custPhone1" required dir="ltr" placeholder="05 / 06 / 07 XX XX XX XX (رقم الهاتف الأول) *" 
-                                   class="w-full bg-obsidian border border-gray-700 focus:border-gold-500 rounded-xl px-3.5 py-3 text-sm text-white placeholder-gray-500 focus:outline-none transition-colors text-right">
+                            <input type="tel" id="custPhone1" required dir="ltr" placeholder="05 / 06 / 07 XX XX XX XX (رقم الهاتف الأساسي) *" 
+                                   class="w-full bg-black/80 border border-gray-700 focus:border-gold-500 rounded-xl px-3.5 py-3 text-sm text-white placeholder-gray-500 focus:outline-none transition-colors text-right">
                         </div>
                         <div>
-                            <input type="tel" id="custPhone2" dir="ltr" placeholder="رقم هاتف ثانٍ للتأكيد (اختياري)" 
-                                   class="w-full bg-obsidian border border-gray-700 focus:border-gold-500 rounded-xl px-3.5 py-3 text-sm text-white placeholder-gray-500 focus:outline-none transition-colors text-right">
+                            <input type="tel" id="custPhone2" dir="ltr" placeholder="رقم هاتف ثانٍ لتسهيل الوصول إليك (اختياري)" 
+                                   class="w-full bg-black/80 border border-gray-700 focus:border-gold-500 rounded-xl px-3.5 py-3 text-sm text-white placeholder-gray-500 focus:outline-none transition-colors text-right">
                         </div>
                     </div>
 
                     <!-- 58 Wilayas Selector -->
                     <div>
                         <select id="custWilaya" required onchange="handleWilayaSelection()" 
-                                class="w-full bg-obsidian border border-gray-700 focus:border-gold-500 rounded-xl px-3.5 py-3 text-sm text-white focus:outline-none transition-colors">
+                                class="w-full bg-black/80 border border-gray-700 focus:border-gold-500 rounded-xl px-3.5 py-3 text-sm text-white focus:outline-none transition-colors">
                             <option value="">-- حدد ولايتك (58 ولاية جزائرية) * --</option>
                         </select>
                     </div>
@@ -568,13 +544,13 @@
                     </div>
 
                     <div>
-                        <input type="text" id="custCommune" required placeholder="البلدية أو الحي وعنوانك بالتفصيل *" 
-                               class="w-full bg-obsidian border border-gray-700 focus:border-gold-500 rounded-xl px-3.5 py-3 text-sm text-white placeholder-gray-500 focus:outline-none transition-colors">
+                        <input type="text" id="custCommune" required placeholder="البلدية والحي وعنوانك بدقة *" 
+                               class="w-full bg-black/80 border border-gray-700 focus:border-gold-500 rounded-xl px-3.5 py-3 text-sm text-white placeholder-gray-500 focus:outline-none transition-colors">
                     </div>
 
                     <div>
                         <textarea id="custRemarque" rows="2" placeholder="ملاحظة لعمال التوصيل (مثال: أوقات تفضل فيها الاتصال...)" 
-                                  class="w-full bg-obsidian border border-gray-700 focus:border-gold-500 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none transition-colors"></textarea>
+                                  class="w-full bg-black/80 border border-gray-700 focus:border-gold-500 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-gray-500 focus:outline-none transition-colors"></textarea>
                     </div>
                 </div>
 
@@ -589,12 +565,12 @@
                         <span id="recapShippingPrice" class="font-bold text-emerald-400">مجاني (0 دج)</span>
                     </div>
                     <div class="border-t border-white/10 pt-2 flex justify-between items-center text-sm font-black text-white">
-                        <span>المبلغ الصافي عند الاستلام:</span>
+                        <span>المبلغ المستحق عند الاستلام:</span>
                         <span id="recapTotalPrice" class="text-gradient-gold text-lg">9,900 دج</span>
                     </div>
                 </div>
 
-                <!-- 4. ISLAMIC OATH & ANTI-FAKE FILTER (CRITICAL IN DZ) -->
+                <!-- 4. ISLAMIC OATH & ANTI-FAKE FILTER -->
                 <div class="bg-rolex-950 border border-gold-500/60 rounded-2xl p-4 shadow-inner">
                     <div class="text-center mb-2">
                         <span class="text-gold-300 text-sm font-bold font-amiri block">
@@ -609,7 +585,7 @@
                     </label>
                 </div>
 
-                <!-- SUBMIT BUTTON WITH GOLD PARTICLES & PULSE -->
+                <!-- SUBMIT BUTTON -->
                 <button type="submit" id="submitOrderBtn" class="btn-luxury-glow w-full text-black font-black text-base py-4 rounded-xl shadow-2xl flex items-center justify-center transition-transform active:scale-95">
                     <i class="fas fa-check-double ml-2 text-lg"></i>
                     <span>اضغط هنا لتأكيد حجزك الآن</span>
@@ -619,19 +595,19 @@
 
         <!-- FAQ ACCORDION -->
         <section class="mb-10">
-            <h3 class="text-center text-sm font-black text-gold-300 mb-4">الأسئلة الشائعة حول الطلب والتوصيل</h3>
+            <h3 class="text-center text-sm font-black text-gold-300 mb-4">الأسئلة المتكررة</h3>
             <div class="space-y-2 text-xs">
-                <details class="bg-slateCard border border-white/10 rounded-xl p-3 cursor-pointer">
+                <details class="bg-cardDark border border-white/10 rounded-xl p-3 cursor-pointer">
                     <summary class="font-bold text-white flex justify-between items-center">
                         <span>هل يمكنني فتح الطرد ومعاينة الساعة قبل الدفع؟</span>
                         <i class="fas fa-chevron-down text-gold-400 text-xs"></i>
                     </summary>
                     <p class="text-gray-400 mt-2 text-[11px] leading-relaxed">
-                        نعم وبكل تأكيد! سياستنا الصارمة تضمن لك فتح الطرد، معاينة الساعة وتفاصيلها وفولاذها والتأكد التام من مطابقتها لكل ما ذكرناه قبل دفع أي دينار لعامل التوصيل.
+                        نعم وبكل تأكيد! سياستنا الصارمة تضمن لك فتح الطرد، معاينة الساعة وتفاصيلها الفاخرة والتأكد التام من مطابقتها لكل توقعاتك قبل دفع أي دينار لعامل التوصيل.
                     </p>
                 </details>
 
-                <details class="bg-slateCard border border-white/10 rounded-xl p-3 cursor-pointer">
+                <details class="bg-cardDark border border-white/10 rounded-xl p-3 cursor-pointer">
                     <summary class="font-bold text-white flex justify-between items-center">
                         <span>كم تستغرق مدة التوصيل لولايتي؟</span>
                         <i class="fas fa-chevron-down text-gold-400 text-xs"></i>
@@ -646,13 +622,13 @@
         <!-- FOOTER -->
         <footer class="text-center text-gray-500 text-[10px] pb-8 space-y-1">
             <p class="font-bold text-gray-400">TAPYACH ALGERIA • EXCLUSIVE LUXURY TIMEPIECES</p>
-            <p>جميع الحقوق محفوظة © 2026. ضمان محلي معتمد وخدمة ما بعد البيع في القمة.</p>
+            <p>جميع الحقوق محفوظة © 2026. الفخامة التي تستحقها أينما كنت في الجزائر.</p>
         </footer>
 
     </div>
 
     <!-- ======================================================= -->
-    <!-- 🎯 3. THANK YOU PAGE (REVEALS INSTANTLY UPON ORDER)     -->
+    <!-- 🎯 3. THANK YOU PAGE (REVEALS UPON ORDER COMPLETION)   -->
     <!-- ======================================================= -->
     <div id="thankYouView" class="hidden min-h-screen max-w-md mx-auto px-4 py-8 flex flex-col justify-center items-center text-center">
         <div class="bg-rolex-950/95 border-2 border-gold-500/70 rounded-3xl p-6 shadow-2xl w-full backdrop-blur-2xl">
@@ -683,7 +659,7 @@
                 </div>
             </div>
 
-            <!-- WHATSAPP INSTANT CONFIRMATION WITH GLOW ANIMATION -->
+            <!-- WHATSAPP INSTANT CONFIRMATION BUTTON -->
             <div class="p-4 bg-gradient-to-r from-emerald-950 to-carbon rounded-2xl border border-emerald-500/50 mb-3 shadow-xl">
                 <p class="text-xs text-emerald-300 font-bold mb-3 flex items-center justify-center">
                     <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping ml-2"></span>
@@ -708,4 +684,274 @@
         // --- 58 WILAYAS OF ALGERIA ---
         const algerianWilayas = [
             "01 - أدرار", "02 - الشلف", "03 - الأغواط", "04 - أم البواقي", "05 - باتنة", "06 - بجاية", "07 - بسكرة", "08 - بشار", "09 - البليدة", "10 - البويرة",
-            "11 - تمنراست", "12 - تبسة", "1
+            "11 - تمنراست", "12 - تبسة", "13 - تلمسان", "14 - تيارت", "15 - تيزي وزو", "16 - الجزائر", "17 - الجلفة", "18 - جيجل", "19 - سطيف", "20 - سعيدة",
+            "21 - سكيكدة", "22 - سيدي بلعباس", "23 - عنابة", "24 - قالمة", "25 - قسنطينة", "26 - المدية", "27 - مستغانم", "28 - المسيلة", "29 - معسكر", "30 - ورقلة",
+            "31 - وهران", "32 - البيض", "33 - إليزي", "34 - برج بوعريريج", "35 - بومرداس", "36 - الطارف", "37 - تندوف", "38 - تيسمسيلت", "39 - الوادي", "40 - خنشلة",
+            "41 - سوق أهراس", "42 - تيبازة", "43 - ميلة", "44 - عين الدفلى", "45 - النعامة", "46 - عين تموشنت", "47 - غرداية", "48 - غليزان", "49 - تيميمون", "50 - برج باجي مختار",
+            "51 - أولاد جلال", "52 - بني عباس", "53 - إن صالح", "54 - إن قزام", "55 - تقرت", "56 - جانت", "57 - المغير", "58 - المنيعة"
+        ];
+
+        // Populate Wilayas Dropdown
+        const wilayaSelect = document.getElementById('custWilaya');
+        algerianWilayas.forEach(w => {
+            const opt = document.createElement('option');
+            opt.value = w;
+            opt.textContent = w;
+            wilayaSelect.appendChild(opt);
+        });
+
+        // --- PRICING & OFFER LOGIC ---
+        let currentOffer = 'vip'; // default VIP
+        const pricing = {
+            vip: { price: 9900, shipping: 0, title: "العرض الملكي VIP الكامل (علبة خشبية + ضمان + شحن مجاني)" },
+            std: { price: 8900, shipping: 700, title: "العرض البسيط (الساعة فقط + 700 دج شحن)" }
+        };
+
+        function selectOffer(type) {
+            currentOffer = type;
+            const cardVIP = document.getElementById('cardOfferVIP');
+            const cardStd = document.getElementById('cardOfferStd');
+            const radioVIP = document.getElementById('offerRadioVIP');
+            const radioStd = document.getElementById('offerRadioStd');
+
+            if(type === 'vip') {
+                cardVIP.classList.add('active');
+                cardStd.classList.remove('active');
+                radioVIP.checked = true;
+                radioStd.checked = false;
+                document.getElementById('stickyPriceText').textContent = '9,900 دج';
+                document.getElementById('stickyBadgeText').textContent = '👑 العرض الملكي + توصيل مجاني';
+            } else {
+                cardStd.classList.add('active');
+                cardVIP.classList.remove('active');
+                radioStd.checked = true;
+                radioVIP.checked = false;
+                document.getElementById('stickyPriceText').textContent = '9,600 دج';
+                document.getElementById('stickyBadgeText').textContent = 'ساعة فقط (8900 دج + 700 دج توصيل)';
+            }
+            updateRecap();
+        }
+
+        function updateRecap() {
+            const offerData = pricing[currentOffer];
+            const total = offerData.price + offerData.shipping;
+            document.getElementById('recapProductPrice').textContent = offerData.price.toLocaleString() + ' دج';
+            document.getElementById('recapShippingPrice').textContent = offerData.shipping === 0 ? 'مجاني (0 دج)' : offerData.shipping + ' دج';
+            document.getElementById('recapTotalPrice').textContent = total.toLocaleString() + ' دج';
+        }
+
+        function handleWilayaSelection() {
+            const val = wilayaSelect.value;
+            const noticeBox = document.getElementById('wilayaDeliveryNotice');
+            const noticeText = document.getElementById('wilayaDeliveryNoticeText');
+            
+            if(!val) {
+                noticeBox.classList.add('hidden');
+                return;
+            }
+
+            noticeBox.classList.remove('hidden');
+            if(val.includes("الجزائر") || val.includes("البليدة") || val.includes("تيبازة") || val.includes("بومرداس")) {
+                noticeText.innerHTML = `<b>توصيل سريع جداً:</b> يصلك طلبك إلى ${val} خلال <b>24 ساعة</b> فقط مع المعاينة قبل الدفع.`;
+            } else if(val.includes("باتنة") || val.includes("سطيف") || val.includes("وهران") || val.includes("قسنطينة") || val.includes("عنابة") || val.includes("تلمسان")) {
+                noticeText.innerHTML = `<b>توصيل ممتاز:</b> يصلك طلبك إلى ${val} خلال <b>24 - 48 ساعة</b> لباب دارك.`;
+            } else {
+                noticeText.innerHTML = `<b>توصيل مضمون:</b> شحن متوفر لـ ${val} في <b>2 - 4 أيام</b> مع حق الفحص الكامل قبل الدفع.`;
+            }
+        }
+
+        // --- SLIDER ENGINE (TOUCH SWIPE + BUTTONS + AUTO) ---
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slider-item');
+        const dots = document.getElementById('sliderDots').children;
+        let sliderTimer = null;
+
+        function showSlide(index) {
+            slides.forEach((s, i) => {
+                s.style.opacity = i === index ? '1' : '0';
+                dots[i].className = i === index ? 'w-4 h-1.5 rounded-full bg-gold-400 transition-all' : 'w-1.5 h-1.5 rounded-full bg-gray-600 transition-all';
+            });
+            currentSlide = index;
+        }
+
+        function nextSlide() {
+            showSlide((currentSlide + 1) % slides.length);
+        }
+
+        function prevSlide() {
+            showSlide((currentSlide - 1 + slides.length) % slides.length);
+        }
+
+        function startAutoSlider() {
+            sliderTimer = setInterval(nextSlide, 4500);
+        }
+        function pauseAutoSlider() {
+            clearInterval(sliderTimer);
+        }
+        startAutoSlider();
+
+        // Touch Swipe
+        const sliderElem = document.getElementById('sliderContainer');
+        let touchStart = 0;
+        let touchEnd = 0;
+
+        sliderElem.addEventListener('touchstart', e => {
+            touchStart = e.changedTouches[0].screenX;
+            pauseAutoSlider();
+        }, { passive: true });
+
+        sliderElem.addEventListener('touchend', e => {
+            touchEnd = e.changedTouches[0].screenX;
+            if (touchEnd < touchStart - 35) nextSlide();
+            if (touchEnd > touchStart + 35) prevSlide();
+            startAutoSlider();
+        }, { passive: true });
+
+        // --- COUNTDOWN TIMER ---
+        let totalSeconds = 2 * 3600 + 49 * 60 + 15;
+        setInterval(() => {
+            if(totalSeconds > 0) {
+                totalSeconds--;
+                const h = String(Math.floor(totalSeconds / 3600)).padStart(2, '0');
+                const m = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, '0');
+                const s = String(totalSeconds % 60).padStart(2, '0');
+                document.getElementById('countdownTimer').textContent = `${h}:${m}:${s}`;
+            }
+        }, 1000);
+
+        // --- TOP NOTIFICATION ROTATION ---
+        const realBuyers = [
+            { name: "سفيان بن علي من باتنة", wilaya: "باتنة", action: "اقتنى العرض الملكي VIP (9900 دج)" },
+            { name: "أمين بلقاسم من سطيف", wilaya: "سطيف", action: "طلب ساعتين مع العلبة الملكية" },
+            { name: "كريم شريف من وهران", wilaya: "وهران", action: "اقتنى العرض الملكي VIP (9900 دج)" },
+            { name: "عبد النور من الجزائر العاصمة", wilaya: "الجزائر", action: "أكد طلبه للتوصيل السريع غداً" },
+            { name: "رياض منصوري من قسنطينة", wilaya: "قسنطينة", action: "اقتنى العرض الملكي VIP (9900 دج)" }
+        ];
+
+        const topNotif = document.getElementById('topNotification');
+        function triggerTopNotif() {
+            const buyer = realBuyers[Math.floor(Math.random() * realBuyers.length)];
+            const randomMin = Math.floor(Math.random() * 6) + 1;
+            
+            document.getElementById('notifPerson').textContent = buyer.name;
+            document.getElementById('notifAction').textContent = buyer.action;
+            document.getElementById('notifTime').textContent = `منذ ${randomMin} د`;
+
+            topNotif.classList.add('show');
+            setTimeout(() => { topNotif.classList.remove('show'); }, 4500);
+        }
+        setTimeout(triggerTopNotif, 3000);
+        setInterval(triggerTopNotif, 18000);
+
+        // --- ORDER SUBMISSION LOGIC ---
+        async function handleOrderSubmit(e) {
+            e.preventDefault();
+
+            const btn = document.getElementById('submitOrderBtn');
+            btn.innerHTML = `<i class="fas fa-spinner fa-spin ml-2"></i> جاري تأكيد حجزك في النظام...`;
+            btn.disabled = true;
+
+            const offerData = pricing[currentOffer];
+            const totalPrice = offerData.price + offerData.shipping;
+
+            const orderPayload = {
+                brand: "TAPYACH",
+                model: "Rolex Cosmograph Daytona",
+                offer: offerData.title,
+                productPrice: offerData.price,
+                shippingPrice: offerData.shipping,
+                totalAmount: totalPrice,
+                customerName: document.getElementById('custName').value.trim(),
+                phone1: document.getElementById('custPhone1').value.trim(),
+                phone2: document.getElementById('custPhone2').value.trim() || "غير مذكور",
+                wilaya: document.getElementById('custWilaya').value,
+                commune: document.getElementById('custCommune').value.trim(),
+                notes: document.getElementById('custRemarque').value.trim() || "بدون ملاحظة",
+                submittedAt: new Date().toLocaleString('ar-DZ')
+            };
+
+            // =======================================================
+            // 🎯 TELEGRAM BOT NOTIFICATION SETUP
+            // =======================================================
+            const BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN";
+            const CHAT_ID = "YOUR_TELEGRAM_CHAT_ID";
+
+            const tgMessage = `
+👑 *طلب ملكي جديد لساعة دايتونا - TAPYACH* 👑
+━━━━━━━━━━━━━━━━━━━━
+👤 *العميل:* ${orderPayload.customerName}
+📞 *الهاتف 1:* ${orderPayload.phone1}
+📱 *الهاتف 2:* ${orderPayload.phone2}
+📍 *الولاية:* ${orderPayload.wilaya}
+🏠 *البلدية والعنوان:* ${orderPayload.commune}
+━━━━━━━━━━━━━━━━━━━━
+📦 *الباقة:* ${orderPayload.offer}
+💰 *المجموع الصافي:* ${orderPayload.totalAmount} دج
+📝 *ملاحظات:* ${orderPayload.notes}
+⏰ *الوقت:* ${orderPayload.submittedAt}
+            `;
+
+            try {
+                // Send Telegram
+                if(BOT_TOKEN !== "YOUR_TELEGRAM_BOT_TOKEN") {
+                    fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ chat_id: CHAT_ID, text: tgMessage, parse_mode: "Markdown" })
+                    }).catch(err => console.log(err));
+                }
+
+                // =======================================================
+                // 🎯 GOOGLE SHEETS APPS SCRIPT
+                // =======================================================
+                const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_SCRIPT_URL_HERE";
+                if(GOOGLE_SCRIPT_URL !== "YOUR_GOOGLE_SCRIPT_URL_HERE") {
+                    fetch(GOOGLE_SCRIPT_URL, {
+                        method: "POST",
+                        mode: "no-cors",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(orderPayload)
+                    }).catch(err => console.log(err));
+                }
+
+                // Fire Meta Pixel Purchase
+                if(typeof fbq === 'function') {
+                    fbq('track', 'Purchase', {
+                        value: totalPrice,
+                        currency: 'DZD',
+                        content_name: 'Rolex Daytona VIP'
+                    });
+                }
+
+                // Display Thank You View
+                showThankYouPage(orderPayload);
+
+            } catch (error) {
+                console.error("Order error", error);
+                btn.innerHTML = `<i class="fas fa-check-double ml-2 text-lg"></i> اضغط هنا لتأكيد حجزك الآن`;
+                btn.disabled = false;
+            }
+        }
+
+        // --- THANK YOU VIEW TRANSITION & WHATSAPP ---
+        function showThankYouPage(order) {
+            document.getElementById('landingView').classList.add('hidden');
+            document.getElementById('mobileBottomBar').classList.add('hidden');
+            document.getElementById('thankYouView').classList.remove('hidden');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+
+            document.getElementById('thankYouCustomerName').textContent = order.customerName;
+            document.getElementById('tyOfferName').textContent = currentOffer === 'vip' ? 'العرض الملكي VIP الكامل' : 'العرض البسيط';
+            document.getElementById('tyTotalAmount').textContent = order.totalAmount.toLocaleString() + ' دج';
+            document.getElementById('tyWilayaName').textContent = order.wilaya;
+
+            // =======================================================
+            // 🎯 WHATSAPP NUMBER CONFIGURATION (213XXXXXXXXX)
+            // =======================================================
+            const WA_PHONE = "213555000000"; // <- ضع رقمك هنا
+            const waMsg = `السلام عليكم ورحمة الله، أنا ${order.customerName} من ولاية ${order.wilaya}. قمت للتو بطلب ساعة رولكس دايتونا (${order.offer}) بمبلغ إجمالي ${order.totalAmount} دج وأريد تأكيد طلبي لتسريع خروج الشحنة.`;
+            document.getElementById('whatsappConfirmBtn').href = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(waMsg)}`;
+        }
+    </script>
+</body>
+</html>
