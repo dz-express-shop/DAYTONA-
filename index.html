@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>TAPYACH | أسطورة الدايتونا - توقيع الهيبة والمكانة في الجزائر</title>
     
-    <!-- Meta Tags for High-Ticket Algerian Meta/TikTok Ads -->
     <meta property="og:title" content="TAPYACH | ساعة دايتونا النخبوية">
     <meta property="og:description" content="ليست مجرد ساعة لمعرفة الوقت، بل إعلان صامت عن نجاحك وهيبتك في كل مجلس. الدفع بعد المعاينة في 58 ولاية.">
     <meta property="og:type" content="product">
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
@@ -56,7 +54,6 @@
             overflow-x: hidden;
         }
 
-        /* Gold Gradient Text */
         .text-gradient-gold {
             background: linear-gradient(135deg, #967215 0%, #D4AF37 50%, #6E540C 100%);
             -webkit-background-clip: text;
@@ -64,7 +61,6 @@
             color: transparent;
         }
 
-        /* Emerald-Gold Glow Shimmer Button */
         .btn-luxury-glow {
             position: relative;
             background: linear-gradient(135deg, #004733 0%, #064430 50%, #022218 100%);
@@ -83,7 +79,6 @@
             50% { transform: scale(1.02); }
         }
 
-        /* WhatsApp Animated Neon Pulse */
         .whatsapp-glow {
             animation: whatsappPulse 1.8s infinite;
             box-shadow: 0 0 25px #25D366, 0 0 50px rgba(37, 211, 102, 0.4);
@@ -94,7 +89,6 @@
             100% { transform: scale(1); box-shadow: 0 0 15px #25D366; }
         }
 
-        /* Top Notification Slide Down */
         .top-notification {
             position: fixed;
             top: -130px;
@@ -109,7 +103,6 @@
             top: 14px;
         }
 
-        /* Offer Card Transition */
         .offer-card {
             border: 2px solid #E5E7EB;
             transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -121,28 +114,28 @@
         }
     </style>
 
-    <!-- ======================================================= -->
-    <!-- 🎯 1. PIXEL & TRACKING PLACEHOLDERS (META & TIKTOK)     -->
-    <!-- ======================================================= -->
     <script>
-        const META_PIXEL_ID = "YOUR_META_PIXEL_ID"; 
-        if(META_PIXEL_ID !== "YOUR_META_PIXEL_ID") {
-            !function(f,b,e,v,n,t,s)
-            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', META_PIXEL_ID);
-            fbq('track', 'PageView');
-        }
+        // META PIXEL (Facebook) - 880279101448547
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '880279101448547');
+        fbq('track', 'PageView');
+
+        // TIKTOK PIXEL PLACEHOLDER
+        // (إذا كان لديك بيكسل تيك توك، استبدل الكود هنا)
     </script>
+    <noscript>
+        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=880279101448547&ev=PageView&noscript=1"/>
+    </noscript>
 </head>
 <body class="selection:bg-gold-500 selection:text-white pb-32">
 
-    <!-- TOP SOCIAL PROOF NOTIFICATION -->
     <div id="topNotification" class="top-notification bg-white/95 border border-rolex-emerald/30 backdrop-blur-2xl p-3.5 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.12)] flex items-center justify-between">
         <div class="flex items-center space-x-3 space-x-reverse">
             <div class="relative">
@@ -159,7 +152,6 @@
         <span class="text-[10px] text-gray-500 bg-gray-100 px-2.5 py-1 rounded-full border border-gray-200 flex-shrink-0" id="notifTime">منذ 3 د</span>
     </div>
 
-    <!-- VIP TOP BAR -->
     <header class="bg-gradient-to-r from-rolex-emerald via-rolex-900 to-rolex-emerald text-white border-b border-gold-500/30 py-2.5 px-3 sticky top-0 z-40 backdrop-blur-xl shadow-sm">
         <div class="max-w-md mx-auto flex items-center justify-between text-[11px]">
             <div class="flex items-center text-gold-300 font-bold">
@@ -176,7 +168,6 @@
         </div>
     </header>
 
-    <!-- MOBILE STICKY BOTTOM CONVERSION BAR -->
     <div id="mobileBottomBar" class="fixed bottom-0 left-0 right-0 z-40 p-3 bg-white/95 border-t border-gray-200 backdrop-blur-xl flex items-center justify-between shadow-[0_-10px_25px_rgba(0,0,0,0.08)]">
         <div>
             <div class="flex items-center space-x-1.5 space-x-reverse">
@@ -191,10 +182,8 @@
         </a>
     </div>
 
-    <!-- MAIN CONTAINER -->
     <div id="landingView" class="max-w-md mx-auto px-4 pt-3">
 
-        <!-- BRAND & CREST -->
         <div class="text-center my-2">
             <div class="inline-flex flex-col items-center">
                 <i class="fas fa-crown text-3xl text-gold-500 drop-shadow-[0_2px_8px_rgba(212,175,55,0.4)]"></i>
@@ -203,7 +192,6 @@
             </div>
         </div>
 
-        <!-- [A] ATTENTION: STATUS & PRESTIGE HOOK -->
         <div class="text-center space-y-2 mb-4">
             <div class="inline-flex items-center bg-rolex-50 border border-rolex-emerald/30 px-3 py-1 rounded-full text-[11px] font-bold text-rolex-emerald">
                 <i class="fas fa-certificate ml-1.5 text-gold-500"></i> الرمز الأيقوني لأصحاب النفوذ والقرارات
@@ -219,64 +207,32 @@
             </p>
         </div>
 
-        <!-- ======================================================= -->
-        <!-- 📸 2. SMART LUXURY SLIDER                                -->
-        <!-- ======================================================= -->
         <div class="relative bg-white border border-gray-200 rounded-3xl p-2.5 overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.06)] mb-6">
-            
             <div class="relative w-full h-[370px] rounded-2xl overflow-hidden bg-gray-100" id="sliderContainer">
-                
-                <!-- SLIDE 1 -->
                 <div class="slider-item absolute inset-0 transition-opacity duration-700 opacity-100 flex items-center justify-center">
-                    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=85" 
-                         alt="TAPYACH Luxury Daytona Watch" 
-                         class="w-full h-full object-cover select-none">
-                    
+                    <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=85" class="w-full h-full object-cover select-none">
                     <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-gray-200 text-[10px] text-rolex-emerald font-bold flex items-center shadow-sm">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 ml-1.5"></span>
-                        الهيبة الملكية على المعصم
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 ml-1.5"></span> الهيبة الملكية على المعصم
                     </div>
                 </div>
-
-                <!-- SLIDE 2 -->
                 <div class="slider-item absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
-                    <img src="https://images.unsplash.com/photo-1547996160-71dfabb1a7b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=85" 
-                         alt="Rolex Daytona Wrist Presence" 
-                         class="w-full h-full object-cover select-none">
+                    <img src="https://images.unsplash.com/photo-1547996160-71dfabb1a7b1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=85" class="w-full h-full object-cover select-none">
                     <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-gray-200 text-[10px] text-rolex-emerald font-bold flex items-center shadow-sm">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 ml-1.5"></span>
-                        لمعان يلفت الأنظار في كل مصافحة
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 ml-1.5"></span> لمعان يلفت الأنظار في كل مصافحة
                     </div>
                 </div>
-
-                <!-- SLIDE 3 -->
                 <div class="slider-item absolute inset-0 transition-opacity duration-700 opacity-0 flex items-center justify-center">
-                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=85" 
-                         alt="VIP Luxury Packaging" 
-                         class="w-full h-full object-cover select-none">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=85" class="w-full h-full object-cover select-none">
                     <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-full border border-gray-200 text-[10px] text-rolex-emerald font-bold flex items-center shadow-sm">
-                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 ml-1.5"></span>
-                        تجربة فتح الصندوق الملكي الخشبي
+                        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 ml-1.5"></span> تجربة فتح الصندوق الملكي الخشبي
                     </div>
                 </div>
-
-                <!-- MANUAL NAVIGATION BUTTONS -->
-                <button onclick="prevSlide()" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 border border-gray-300 text-rolex-emerald flex items-center justify-center backdrop-blur-md active:scale-90 transition-all z-20 shadow">
-                    <i class="fas fa-chevron-right text-xs"></i>
-                </button>
-                <button onclick="nextSlide()" class="absolute left-2.5 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 border border-gray-300 text-rolex-emerald flex items-center justify-center backdrop-blur-md active:scale-90 transition-all z-20 shadow">
-                    <i class="fas fa-chevron-left text-xs"></i>
-                </button>
-
-                <!-- DOTS -->
+                <button onclick="prevSlide()" class="absolute right-2.5 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 border border-gray-300 text-rolex-emerald flex items-center justify-center backdrop-blur-md active:scale-90 transition-all z-20 shadow"><i class="fas fa-chevron-right text-xs"></i></button>
+                <button onclick="nextSlide()" class="absolute left-2.5 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-white/80 border border-gray-300 text-rolex-emerald flex items-center justify-center backdrop-blur-md active:scale-90 transition-all z-20 shadow"><i class="fas fa-chevron-left text-xs"></i></button>
                 <div class="absolute bottom-3 right-3 flex space-x-1.5 space-x-reverse z-20" id="sliderDots">
-                    <span class="w-4 h-1.5 rounded-full bg-gold-500"></span>
-                    <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
-                    <span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
+                    <span class="w-4 h-1.5 rounded-full bg-gold-500"></span><span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span><span class="w-1.5 h-1.5 rounded-full bg-gray-300"></span>
                 </div>
             </div>
-
-            <!-- Privilege Badges -->
             <div class="grid grid-cols-3 gap-2 mt-3 pt-2.5 border-t border-gray-100 text-center text-[10px] text-gray-600 font-semibold">
                 <div class="flex items-center justify-center"><i class="fas fa-hand-holding-heart text-gold-600 ml-1"></i> إحساس الفخامة والوزن</div>
                 <div class="flex items-center justify-center"><i class="fas fa-shield-alt text-gold-600 ml-1"></i> ضمان كامل لمدة سنة</div>
@@ -284,163 +240,22 @@
             </div>
         </div>
 
-        <!-- [I] INTEREST: THE PSYCHOLOGY OF POWER & AURA -->
         <section class="bg-gradient-to-b from-rolex-50 via-white to-gray-50 border border-rolex-emerald/20 rounded-3xl p-5 mb-6 shadow-sm relative overflow-hidden">
             <div class="absolute -right-8 -top-8 w-36 h-36 bg-gold-400/10 rounded-full blur-3xl pointer-events-none"></div>
-
             <div class="flex items-center space-x-2 space-x-reverse mb-3">
                 <div class="w-8 h-8 rounded-lg bg-rolex-emerald/10 flex items-center justify-center text-rolex-emerald">
                     <i class="fas fa-chess-king text-sm"></i>
                 </div>
                 <h3 class="text-base font-black text-gray-900">سر الجاذبية التي لا تُقاوم</h3>
             </div>
-
             <div class="space-y-3 text-xs leading-relaxed text-gray-700">
-                <p>
-                    هناك فارق شاسع بين رجل يدخل القاعة فيمر مر الكرام، ورجل حين يمد يده للمصافحة أو يضع معصمه على الطاولة، تتوجه إليه الأنظار وتُفتح له الأبواب باحترام تلقائي.
-                </p>
+                <p>هناك فارق شاسع بين رجل يدخل القاعة فيمر مر الكرام، ورجل حين يمد يده للمصافحة أو يضع معصمه على الطاولة، تتوجه إليه الأنظار وتُفتح له الأبواب باحترام تلقائي.</p>
                 <div class="p-3 bg-white rounded-xl border-r-4 border-gold-500 text-rolex-emerald italic font-semibold shadow-sm">
                     "الناس يحكمون على نجاحك وقيمتك في أول 7 ثوانٍ.. وساعتك هي الرسالة الأولى والأقوى التي يرونها."
                 </div>
-                <p>
-                    علامة <b>TAPYACH</b> تقدم لك هذا الشعور الملكي: الثقل المحترم الذي يذكرك كل دقيقة بأنك تستحق الأفضل، والبريق الراقي الذي يجعل زملاءك، شركاءك وأصدقاءك يسألونك بفضول: <i>"من أين حصلت عليها؟"</i>.
-                </p>
             </div>
         </section>
 
-        <!-- [D] DESIRE: EMOTIONAL IMPACT IN YOUR LIFE -->
-        <section class="space-y-3 mb-6">
-            <h3 class="text-center text-base font-black text-gradient-gold mb-3">ماذا تمنحك هذه التحفة في يومك؟</h3>
-
-            <!-- Impact 1 -->
-            <div class="bg-white border border-gray-200 rounded-2xl p-4 flex items-start space-x-3 space-x-reverse shadow-sm">
-                <div class="w-10 h-10 rounded-xl bg-rolex-50 border border-rolex-emerald/20 flex-shrink-0 flex items-center justify-center text-rolex-emerald text-base">
-                    <i class="fas fa-handshake"></i>
-                </div>
-                <div>
-                    <h4 class="text-xs font-bold text-gray-900 mb-1">كاريزما طاغية في اجتماعات العمل والمفاوضات</h4>
-                    <p class="text-[11px] text-gray-600 leading-normal">تمنحك ثقة داخلية استثنائية تعزز لغة جسدك، لتترك انطباع الشخص الحاسم والمحترف الذي لا يرضى إلا بالقمة.</p>
-                </div>
-            </div>
-
-            <!-- Impact 2 -->
-            <div class="bg-white border border-gray-200 rounded-2xl p-4 flex items-start space-x-3 space-x-reverse shadow-sm">
-                <div class="w-10 h-10 rounded-xl bg-rolex-50 border border-rolex-emerald/20 flex-shrink-0 flex items-center justify-center text-rolex-emerald text-base">
-                    <i class="fas fa-gift"></i>
-                </div>
-                <div>
-                    <h4 class="text-xs font-bold text-gray-900 mb-1">الهدية الملكية التي تُخلد في الذاكرة</h4>
-                    <p class="text-[11px] text-gray-600 leading-normal">إذا كنت تهديها لنفسك كمكافأة على إنجازاتك، أو لشخص عزيز (والد، أخ، أو شريك نجاح)، فالعلبة الخشبية الفاخرة تعبر عن أقصى درجات التقدير والمحبة.</p>
-                </div>
-            </div>
-
-            <!-- Impact 3 -->
-            <div class="bg-white border border-gray-200 rounded-2xl p-4 flex items-start space-x-3 space-x-reverse shadow-sm">
-                <div class="w-10 h-10 rounded-xl bg-rolex-50 border border-rolex-emerald/20 flex-shrink-0 flex items-center justify-center text-rolex-emerald text-base">
-                    <i class="fas fa-star"></i>
-                </div>
-                <div>
-                    <h4 class="text-xs font-bold text-gray-900 mb-1">إطلالة متكاملة في المناسبات والأعراس</h4>
-                    <p class="text-[11px] text-gray-600 leading-normal">تتناغم ببراعة فائقة سواء كنت ترتدي بدلة رسمية كلاسيكية أو لباساً أنيقاً، لتكون ساعتك هي القطعة المركزية التي تخطف الأضواء.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ⚡ PSYCHOLOGICAL COMPARISON -->
-        <section class="bg-white border border-gray-200 rounded-3xl p-4 mb-6 shadow-sm">
-            <h3 class="text-sm font-black text-center text-rolex-emerald mb-1">الفرق بين أن تكون عادياً.. أو استثنائياً</h3>
-            <p class="text-[10px] text-gray-500 text-center mb-4">لماذا يفضل أصحاب الذوق الرفيع إصدار TAPYACH؟</p>
-
-            <div class="overflow-x-auto">
-                <table class="w-full text-right text-xs">
-                    <thead>
-                        <tr class="border-b border-gray-200 text-[11px]">
-                            <th class="py-2 text-gray-500">التجربة</th>
-                            <th class="py-2 text-rolex-emerald font-black">إصدار TAPYACH الملكي</th>
-                            <th class="py-2 text-red-500 font-bold">الساعات التجارية العادية</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-100 text-[10px]">
-                        <tr>
-                            <td class="py-2.5 font-bold text-gray-800">الانطباع الأول</td>
-                            <td class="py-2.5 text-emerald-600 font-bold"><i class="fas fa-check ml-1"></i> يلفت النظر والكل يسألك عنها</td>
-                            <td class="py-2.5 text-gray-400"><i class="fas fa-times ml-1"></i> باهت ولا ينتبه له أحد</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2.5 font-bold text-gray-800">الإحساس بالمعصم</td>
-                            <td class="py-2.5 text-emerald-600 font-bold"><i class="fas fa-check ml-1"></i> ثقل ملكي يمنحك هيبة وراحة</td>
-                            <td class="py-2.5 text-gray-400"><i class="fas fa-times ml-1"></i> خفيف ومحرج يُشعر بالرداءة</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2.5 font-bold text-gray-800">قيمة التقديم كهدية</td>
-                            <td class="py-2.5 text-emerald-600 font-bold"><i class="fas fa-check ml-1"></i> ترفع رأسك وتبهر من يستلمها</td>
-                            <td class="py-2.5 text-gray-400"><i class="fas fa-times ml-1"></i> عادية وتفقد قيمتها بسرعة</td>
-                        </tr>
-                        <tr>
-                            <td class="py-2.5 font-bold text-gray-800">راحة البال</td>
-                            <td class="py-2.5 text-emerald-600 font-bold"><i class="fas fa-check ml-1"></i> تفتح الطرد وتتفقدها قبل الدفع</td>
-                            <td class="py-2.5 text-gray-400"><i class="fas fa-times ml-1"></i> تدفع أولاً في مجهول ومخاطرة</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- REAL HUMAN ALGERIAN SOCIAL PROOF -->
-        <section class="mb-6">
-            <div class="text-center mb-4">
-                <span class="text-[10px] text-gold-600 font-bold uppercase tracking-widest">تجارب موثوقة من ولايات الجزائر</span>
-                <h3 class="text-base font-black text-gray-900">ماذا قال عملاؤنا بعد استلام طرودهم؟</h3>
-            </div>
-
-            <div class="space-y-3">
-                <!-- Review 1 -->
-                <div class="bg-white border border-gray-200 rounded-2xl p-3.5 shadow-sm">
-                    <div class="flex items-center justify-between mb-2">
-                        <div class="flex items-center space-x-2 space-x-reverse">
-                            <div class="w-8 h-8 rounded-full bg-rolex-emerald text-white flex items-center justify-center text-xs font-black">
-                                س
-                            </div>
-                            <div>
-                                <h4 class="text-xs font-bold text-gray-900">سليم مرابط</h4>
-                                <p class="text-[10px] text-gray-500">باتنة (حي كشيدة) • تاجر</p>
-                            </div>
-                        </div>
-                        <div class="text-gold-500 text-xs">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-xs text-gray-700 leading-relaxed">
-                        "السلام عليكم، الحق يقال الساعة فيها هيبة كبيرة في اليد وما تبانش خلاص بلي شريتها بهذا السعر. لي يشوفها عندي يسقسيني عليها. والأهم أن الليفرو خلاني شفتها وتأكدت منها براحتي قبل ما نخلص."
-                    </p>
-                </div>
-
-                <!-- Review 2 -->
-                <div class="bg-white border border-gray-200 rounded-2xl p-3.5 shadow-sm">
-                    <div class="flex items-center justify-between mb-2">
-                        <div class="flex items-center space-x-2 space-x-reverse">
-                            <div class="w-8 h-8 rounded-full bg-rolex-emerald text-white flex items-center justify-center text-xs font-black">
-                                ي
-                            </div>
-                            <div>
-                                <h4 class="text-xs font-bold text-gray-900">ياسين بن عودة</h4>
-                                <p class="text-[10px] text-gray-500">الجزائر (سعيد حمدين) • مهندس</p>
-                            </div>
-                        </div>
-                        <div class="text-gold-500 text-xs">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                    </div>
-                    <p class="text-xs text-gray-700 leading-relaxed">
-                        "اخترت باقة 9900 دج والعلبة الخشبية زادت فيها النص، ديتها كهدية لصديق عزيز وفرح بيها بزاف. شكراً لكم على الاحترافية والسرعة في التوصيل."
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ======================================================= -->
-        <!-- [A] ACTION: ADVANCED CHECKOUT                           -->
-        <!-- ======================================================= -->
         <section id="checkoutSection" class="bg-gradient-to-b from-white via-rolex-50 to-white border-2 border-rolex-emerald/30 rounded-3xl p-5 shadow-lg mb-12 relative">
             <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-rolex-emerald text-white text-[10px] font-black px-4 py-1 rounded-full uppercase tracking-wider shadow-md">
                 استمارة الحجز الرسمي
@@ -453,11 +268,9 @@
 
             <form id="luxuryOrderForm" onsubmit="handleOrderSubmit(event)" class="space-y-4">
                 
-                <!-- 1. CHOOSE OFFER -->
                 <div class="space-y-2.5">
                     <label class="block text-xs font-black text-rolex-emerald">1. حدد الباقة المفضلة لديك *</label>
 
-                    <!-- OFFER 2: VIP 9900 -->
                     <div id="cardOfferVIP" onclick="selectOffer('vip')" class="offer-card active rounded-2xl p-3.5 cursor-pointer relative bg-white">
                         <div class="absolute -top-2.5 left-3 bg-gradient-to-r from-red-600 to-amber-600 text-white text-[10px] font-black px-2.5 py-0.5 rounded-full shadow flex items-center">
                             <i class="fas fa-fire ml-1"></i> اختيار 95% من الزبائن (توفير 1300 دج)
@@ -478,7 +291,6 @@
                         </div>
                     </div>
 
-                    <!-- OFFER 1: BASIC 8900 -->
                     <div id="cardOfferStd" onclick="selectOffer('std')" class="offer-card rounded-2xl p-3.5 cursor-pointer bg-white">
                         <div class="flex items-center justify-between">
                             <div class="flex items-center space-x-2.5 space-x-reverse">
@@ -497,52 +309,37 @@
                     </div>
                 </div>
 
-                <!-- 2. CUSTOMER DETAILS -->
                 <div class="pt-2 border-t border-gray-200 space-y-3">
                     <label class="block text-xs font-black text-rolex-emerald">2. معلومات التوصيل في الجزائر *</label>
 
                     <div>
-                        <input type="text" id="custName" required placeholder="الاسم واللقب بالكامل *" 
-                               class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none transition-colors shadow-sm">
+                        <input type="text" id="custName" required placeholder="الاسم واللقب بالكامل *" class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none transition-colors shadow-sm">
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                         <div>
-                            <input type="tel" id="custPhone1" required dir="ltr" placeholder="05 / 06 / 07 XX XX XX XX (رقم الهاتف الأساسي) *" 
-                                   class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none transition-colors text-right shadow-sm">
+                            <input type="tel" id="custPhone1" required dir="ltr" placeholder="05 / 06 / 07 XX XX XX XX (رقم الهاتف الأساسي) *" class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none transition-colors text-right shadow-sm">
                         </div>
                         <div>
-                            <input type="tel" id="custPhone2" dir="ltr" placeholder="رقم هاتف ثانٍ لتسهيل الوصول إليك (اختياري)" 
-                                   class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none transition-colors text-right shadow-sm">
+                            <input type="tel" id="custPhone2" dir="ltr" placeholder="رقم هاتف ثانٍ لتسهيل الوصول إليك (اختياري)" class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none transition-colors text-right shadow-sm">
                         </div>
                     </div>
 
-                    <!-- 58 Wilayas Selector -->
                     <div>
-                        <select id="custWilaya" required onchange="handleWilayaSelection()" 
-                                class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 focus:outline-none transition-colors shadow-sm">
+                        <select id="custWilaya" required onchange="handleWilayaSelection()" class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 focus:outline-none transition-colors shadow-sm">
                             <option value="">-- حدد ولايتك (58 ولاية جزائرية) * --</option>
                         </select>
                     </div>
 
-                    <!-- Dynamic Delivery Speed Notice -->
-                    <div id="wilayaDeliveryNotice" class="hidden bg-emerald-50 border border-emerald-300 rounded-xl p-2.5 text-xs text-emerald-800 flex items-center">
-                        <i class="fas fa-truck-fast text-emerald-600 ml-2"></i>
-                        <span id="wilayaDeliveryNoticeText">التوصيل متوفر لباب منزلك مع حق فتح الطرد وفحصه.</span>
+                    <div>
+                        <input type="text" id="custCommune" required placeholder="البلدية والحي وعنوانك بدقة *" class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none transition-colors shadow-sm">
                     </div>
 
                     <div>
-                        <input type="text" id="custCommune" required placeholder="البلدية والحي وعنوانك بدقة *" 
-                               class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none transition-colors shadow-sm">
-                    </div>
-
-                    <div>
-                        <textarea id="custRemarque" rows="2" placeholder="ملاحظة لعمال التوصيل (مثال: أوقات تفضل فيها الاتصال...)" 
-                                  class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-2.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none transition-colors shadow-sm"></textarea>
+                        <textarea id="custRemarque" rows="2" placeholder="ملاحظة لعمال التوصيل (اختياري)" class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-2.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none transition-colors shadow-sm"></textarea>
                     </div>
                 </div>
 
-                <!-- 3. REAL-TIME SUMMARY INVOICE -->
                 <div class="bg-gray-50 rounded-2xl p-3.5 border border-gray-200 text-xs space-y-2 shadow-inner">
                     <div class="flex justify-between text-gray-600">
                         <span>سعر الباقة:</span>
@@ -558,116 +355,50 @@
                     </div>
                 </div>
 
-                <!-- 4. ISLAMIC OATH & ANTI-FAKE FILTER -->
                 <div class="bg-rolex-50 border border-rolex-emerald/40 rounded-2xl p-4 shadow-sm">
                     <div class="text-center mb-2">
-                        <span class="text-rolex-emerald text-sm font-bold font-amiri block">
-                            ﴿ وَأَوْفُوا بِالْعَهْدِ ۖ إِنَّ الْعَهْدَ كَانَ مَسْئُولًا ﴾
-                        </span>
+                        <span class="text-rolex-emerald text-sm font-bold font-amiri block">﴿ وَأَوْفُوا بِالْعَهْدِ ۖ إِنَّ الْعَهْدَ كَانَ مَسْئُولًا ﴾</span>
                     </div>
                     <label class="flex items-start space-x-2 space-x-reverse cursor-pointer">
                         <input type="checkbox" id="custPledge" required class="mt-1 w-4 h-4 accent-rolex-emerald rounded cursor-pointer">
                         <span class="text-[11px] text-gray-700 leading-relaxed select-none">
-                            <b>أقسم بالله العظيم</b> أنني جاد في طلبي، وسأرد على اتصال فريق التأكيد، وسأستلم الطرد وأدفع ثمنه لعامل التوصيل، مدركاً تماماً أن الطلبات الكاذبة تكلف الشركة مصاريف شحن باهظة دون وجه حق.
+                            <b>أقسم بالله العظيم</b> أنني جاد في طلبي، وسأرد على اتصال فريق التأكيد، وسأستلم الطرد وأدفع ثمنه لعامل التوصيل.
                         </span>
                     </label>
                 </div>
 
-                <!-- SUBMIT BUTTON -->
                 <button type="submit" id="submitOrderBtn" class="btn-luxury-glow w-full font-black text-base py-4 rounded-xl shadow-lg flex items-center justify-center transition-transform active:scale-95 text-gold-300">
                     <i class="fas fa-check-double ml-2 text-lg"></i>
                     <span>اضغط هنا لتأكيد حجزك الآن</span>
                 </button>
             </form>
         </section>
-
-        <!-- FAQ ACCORDION -->
-        <section class="mb-10">
-            <h3 class="text-center text-sm font-black text-rolex-emerald mb-4">الأسئلة المتكررة</h3>
-            <div class="space-y-2 text-xs">
-                <details class="bg-white border border-gray-200 rounded-xl p-3 cursor-pointer shadow-sm">
-                    <summary class="font-bold text-gray-900 flex justify-between items-center">
-                        <span>هل يمكنني فتح الطرد ومعاينة الساعة قبل الدفع؟</span>
-                        <i class="fas fa-chevron-down text-rolex-emerald text-xs"></i>
-                    </summary>
-                    <p class="text-gray-600 mt-2 text-[11px] leading-relaxed">
-                        نعم وبكل تأكيد! سياستنا الصارمة تضمن لك فتح الطرد، معاينة الساعة وتفاصيلها الفاخرة والتأكد التام من مطابقتها لكل توقعاتك قبل دفع أي دينار لعامل التوصيل.
-                    </p>
-                </details>
-
-                <details class="bg-white border border-gray-200 rounded-xl p-3 cursor-pointer shadow-sm">
-                    <summary class="font-bold text-gray-900 flex justify-between items-center">
-                        <span>كم تستغرق مدة التوصيل لولايتي؟</span>
-                        <i class="fas fa-chevron-down text-rolex-emerald text-xs"></i>
-                    </summary>
-                    <p class="text-gray-600 mt-2 text-[11px] leading-relaxed">
-                        الجزائر العاصمة وضواحيها: خلال 24 ساعة فقط. الولايات الكبرى (وهران، سطيف، باتنة، قسنطينة، عنابة، تلمسان...): 24 إلى 48 ساعة. باقي الولايات والجنوب: من 2 إلى 4 أيام كحد أقصى.
-                    </p>
-                </details>
-            </div>
-        </section>
-
-        <!-- FOOTER -->
-        <footer class="text-center text-gray-500 text-[10px] pb-8 space-y-1">
-            <p class="font-bold text-gray-600">TAPYACH ALGERIA • EXCLUSIVE LUXURY TIMEPIECES</p>
-            <p>جميع الحقوق محفوظة © 2026. الفخامة التي تستحقها أينما كنت في الجزائر.</p>
-        </footer>
-
     </div>
 
-    <!-- ======================================================= -->
-    <!-- 🎯 3. THANK YOU PAGE                                    -->
-    <!-- ======================================================= -->
     <div id="thankYouView" class="hidden min-h-screen max-w-md mx-auto px-4 py-8 flex flex-col justify-center items-center text-center">
         <div class="bg-white border-2 border-rolex-emerald/40 rounded-3xl p-6 shadow-xl w-full">
-            
             <div class="w-16 h-16 rounded-full bg-emerald-100 border-2 border-emerald-500 flex items-center justify-center mx-auto mb-3 shadow">
                 <i class="fas fa-check text-3xl text-emerald-600"></i>
             </div>
-
             <span class="text-[11px] text-rolex-emerald font-bold uppercase tracking-widest">تم تسجيل حجزك بنجاح</span>
             <h2 class="text-2xl font-black text-gray-900 mt-1 mb-2">تهانينا <span id="thankYouCustomerName" class="text-rolex-emerald">سيدي</span>! 🎉</h2>
-            
             <p class="text-xs text-gray-600 leading-relaxed mb-4">
                 لقد حجزت قطعة من إصدار <b class="text-gray-900">Rolex Daytona Cosmograph</b> الفاخر. سيقوم فريق خدمة العملاء بالتواصل معك هاتفياً في أقرب وقت لتأكيد تفاصيل الشحن.
             </p>
-
             <div class="bg-gray-50 rounded-2xl p-3.5 border border-gray-200 text-xs text-right space-y-1.5 mb-6">
-                <div class="flex justify-between">
-                    <span class="text-gray-500">الباقة المختارة:</span>
-                    <span id="tyOfferName" class="font-bold text-rolex-emerald">العرض الملكي VIP</span>
-                </div>
-                <div class="flex justify-between">
-                    <span class="text-gray-500">المبلغ الإجمالي عند الاستلام:</span>
-                    <span id="tyTotalAmount" class="font-black text-gray-900">9,900 دج</span>
-                </div>
-                <div class="flex justify-between">
-                    <span class="text-gray-500">الولاية:</span>
-                    <span id="tyWilayaName" class="font-bold text-gray-800">الجزائر</span>
-                </div>
+                <div class="flex justify-between"><span class="text-gray-500">الباقة المختارة:</span><span id="tyOfferName" class="font-bold text-rolex-emerald">العرض الملكي VIP</span></div>
+                <div class="flex justify-between"><span class="text-gray-500">المبلغ الإجمالي:</span><span id="tyTotalAmount" class="font-black text-gray-900">9,900 دج</span></div>
+                <div class="flex justify-between"><span class="text-gray-500">الولاية:</span><span id="tyWilayaName" class="font-bold text-gray-800">الجزائر</span></div>
             </div>
-
-            <!-- WHATSAPP INSTANT CONFIRMATION BUTTON -->
             <div class="p-4 bg-gradient-to-r from-emerald-50 to-gray-50 rounded-2xl border border-emerald-300 mb-3 shadow-sm">
-                <p class="text-xs text-emerald-800 font-bold mb-3 flex items-center justify-center">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping ml-2"></span>
-                    هل تريد خروج طردك في أول رحلة شحن اليوم؟
-                </p>
-                <a href="#" id="whatsappConfirmBtn" target="_blank" 
-                   class="whatsapp-glow w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-black text-sm py-4 px-4 rounded-xl flex items-center justify-center transition-all">
+                <a href="#" id="whatsappConfirmBtn" target="_blank" class="whatsapp-glow w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-black text-sm py-4 px-4 rounded-xl flex items-center justify-center transition-all">
                     <i class="fab fa-whatsapp text-2xl ml-2"></i>
                     <span>أكّد طلبي فوراً عبر الواتساب</span>
                 </a>
             </div>
-
-            <p class="text-[10px] text-gray-400">يرجى ترك هاتفك مفتوحاً للرد على مكالمة التوصيل.</p>
         </div>
     </div>
 
-
-    <!-- ======================================================= -->
-    <!-- 🎯 4. LOGIC                                             -->
-    <!-- ======================================================= -->
     <script>
         const algerianWilayas = [
             "01 - أدرار", "02 - الشلف", "03 - الأغواط", "04 - أم البواقي", "05 - باتنة", "06 - بجاية", "07 - بسكرة", "08 - بشار", "09 - البليدة", "10 - البويرة",
@@ -688,8 +419,8 @@
 
         let currentOffer = 'vip';
         const pricing = {
-            vip: { price: 9900, shipping: 0, title: "العرض الملكي VIP الكامل (علبة خشبية + ضمان + شحن مجاني)" },
-            std: { price: 8900, shipping: 700, title: "العرض البسيط (الساعة فقط + 700 دج شحن)" }
+            vip: { price: 9900, shipping: 0, title: "العرض الملكي VIP الكامل" },
+            std: { price: 8900, shipping: 700, title: "العرض البسيط (الساعة فقط)" }
         };
 
         function selectOffer(type) {
@@ -725,30 +456,9 @@
             document.getElementById('recapTotalPrice').textContent = total.toLocaleString() + ' دج';
         }
 
-        function handleWilayaSelection() {
-            const val = wilayaSelect.value;
-            const noticeBox = document.getElementById('wilayaDeliveryNotice');
-            const noticeText = document.getElementById('wilayaDeliveryNoticeText');
-            
-            if(!val) {
-                noticeBox.classList.add('hidden');
-                return;
-            }
-
-            noticeBox.classList.remove('hidden');
-            if(val.includes("الجزائر") || val.includes("البليدة") || val.includes("تيبازة") || val.includes("بومرداس")) {
-                noticeText.innerHTML = `<b>توصيل سريع جداً:</b> يصلك طلبك إلى ${val} خلال <b>24 ساعة</b> فقط مع المعاينة قبل الدفع.`;
-            } else if(val.includes("باتنة") || val.includes("سطيف") || val.includes("وهران") || val.includes("قسنطينة") || val.includes("عنابة") || val.includes("تلمسان")) {
-                noticeText.innerHTML = `<b>توصيل ممتاز:</b> يصلك طلبك إلى ${val} خلال <b>24 - 48 ساعة</b> لباب دارك.`;
-            } else {
-                noticeText.innerHTML = `<b>توصيل مضمون:</b> شحن متوفر لـ ${val} في <b>2 - 4 أيام</b> مع حق الفحص الكامل قبل الدفع.`;
-            }
-        }
-
         let currentSlide = 0;
         const slides = document.querySelectorAll('.slider-item');
         const dots = document.getElementById('sliderDots').children;
-        let sliderTimer = null;
 
         function showSlide(index) {
             slides.forEach((s, i) => {
@@ -757,38 +467,9 @@
             });
             currentSlide = index;
         }
-
-        function nextSlide() {
-            showSlide((currentSlide + 1) % slides.length);
-        }
-
-        function prevSlide() {
-            showSlide((currentSlide - 1 + slides.length) % slides.length);
-        }
-
-        function startAutoSlider() {
-            sliderTimer = setInterval(nextSlide, 4500);
-        }
-        function pauseAutoSlider() {
-            clearInterval(sliderTimer);
-        }
-        startAutoSlider();
-
-        const sliderElem = document.getElementById('sliderContainer');
-        let touchStart = 0;
-        let touchEnd = 0;
-
-        sliderElem.addEventListener('touchstart', e => {
-            touchStart = e.changedTouches[0].screenX;
-            pauseAutoSlider();
-        }, { passive: true });
-
-        sliderElem.addEventListener('touchend', e => {
-            touchEnd = e.changedTouches[0].screenX;
-            if (touchEnd < touchStart - 35) nextSlide();
-            if (touchEnd > touchStart + 35) prevSlide();
-            startAutoSlider();
-        }, { passive: true });
+        function nextSlide() { showSlide((currentSlide + 1) % slides.length); }
+        function prevSlide() { showSlide((currentSlide - 1 + slides.length) % slides.length); }
+        setInterval(nextSlide, 4500);
 
         let totalSeconds = 2 * 3600 + 49 * 60 + 15;
         setInterval(() => {
@@ -801,29 +482,7 @@
             }
         }, 1000);
 
-        const realBuyers = [
-            { name: "سفيان بن علي من باتنة", wilaya: "باتنة", action: "اقتنى العرض الملكي VIP (9900 دج)" },
-            { name: "أمين بلقاسم من سطيف", wilaya: "سطيف", action: "طلب ساعتين مع العلبة الملكية" },
-            { name: "كريم شريف من وهران", wilaya: "وهران", action: "اقتنى العرض الملكي VIP (9900 دج)" },
-            { name: "عبد النور من الجزائر العاصمة", wilaya: "الجزائر", action: "أكد طلبه للتوصيل السريع غداً" },
-            { name: "رياض منصوري من قسنطينة", wilaya: "قسنطينة", action: "اقتنى العرض الملكي VIP (9900 دج)" }
-        ];
-
-        const topNotif = document.getElementById('topNotification');
-        function triggerTopNotif() {
-            const buyer = realBuyers[Math.floor(Math.random() * realBuyers.length)];
-            const randomMin = Math.floor(Math.random() * 6) + 1;
-            
-            document.getElementById('notifPerson').textContent = buyer.name;
-            document.getElementById('notifAction').textContent = buyer.action;
-            document.getElementById('notifTime').textContent = `منذ ${randomMin} د`;
-
-            topNotif.classList.add('show');
-            setTimeout(() => { topNotif.classList.remove('show'); }, 4500);
-        }
-        setTimeout(triggerTopNotif, 3000);
-        setInterval(triggerTopNotif, 18000);
-
+        // FORM SUBMISSION & API DISPATCH
         async function handleOrderSubmit(e) {
             e.preventDefault();
 
@@ -835,6 +494,7 @@
             const totalPrice = offerData.price + offerData.shipping;
 
             const orderPayload = {
+                source: "tapyach_watch",
                 brand: "TAPYACH",
                 model: "Rolex Cosmograph Daytona",
                 offer: offerData.title,
@@ -846,47 +506,36 @@
                 phone2: document.getElementById('custPhone2').value.trim() || "غير مذكور",
                 wilaya: document.getElementById('custWilaya').value,
                 commune: document.getElementById('custCommune').value.trim(),
-                notes: document.getElementById('custRemarque').value.trim() || "بدون ملاحظة",
-                submittedAt: new Date().toLocaleString('ar-DZ')
+                notes: document.getElementById('custRemarque').value.trim() || "-",
+                submittedAt: new Date().toLocaleString('fr-FR', { timeZone: 'Africa/Algiers' })
             };
 
-            const BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN";
-            const CHAT_ID = "YOUR_TELEGRAM_CHAT_ID";
+            // إعدادات بوت التليغرام الخاص بك
+            const BOT_TOKEN = "8979352082:AAE5yPVwu6NDGVRAb95arPhpOyTDLh-2FfE";
+            const CHAT_ID = "5253167330";
 
-            const tgMessage = `
-👑 *طلب ملكي جديد لساعة دايتونا - TAPYACH* 👑
-━━━━━━━━━━━━━━━━━━━━
-👤 *العميل:* ${orderPayload.customerName}
-📞 *الهاتف 1:* ${orderPayload.phone1}
-📱 *الهاتف 2:* ${orderPayload.phone2}
-📍 *الولاية:* ${orderPayload.wilaya}
-🏠 *البلدية والعنوان:* ${orderPayload.commune}
-━━━━━━━━━━━━━━━━━━━━
-📦 *الباقة:* ${orderPayload.offer}
-💰 *المجموع الصافي:* ${orderPayload.totalAmount} دج
-📝 *ملاحظات:* ${orderPayload.notes}
-⏰ *الوقت:* ${orderPayload.submittedAt}
-            `;
+            // رابط قوقل سكريبت الخاص بك
+            const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzez5y_9dsOy3y0ONv4kqdiAz98o-l2mgsKFENxsZAqM-j1q5B4ASr7qrYflerEV3g/exec";
+
+            // إرسال إشعار تليغرام مباشر
+            const tgMessage = `👑 *طلب ساعة دايتونا جديد (Feuille 3)* 👑\n━━━━━━━━━━━━━━━━━━━━\n👤 *العميل:* ${orderPayload.customerName}\n📞 *الهاتف 1:* ${orderPayload.phone1}\n📱 *الهاتف 2:* ${orderPayload.phone2}\n📍 *الولاية:* ${orderPayload.wilaya}\n🏠 *العنوان:* ${orderPayload.commune}\n━━━━━━━━━━━━━━━━━━━━\n📦 *الباقة:* ${orderPayload.offer}\n💰 *المجموع الصافي:* ${orderPayload.totalAmount} دج\n📝 *ملاحظات:* ${orderPayload.notes}`;
 
             try {
-                if(BOT_TOKEN !== "YOUR_TELEGRAM_BOT_TOKEN") {
-                    fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({ chat_id: CHAT_ID, text: tgMessage, parse_mode: "Markdown" })
-                    }).catch(err => console.log(err));
-                }
+                fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ chat_id: CHAT_ID, text: tgMessage, parse_mode: "Markdown" })
+                }).catch(err => console.log(err));
 
-                const GOOGLE_SCRIPT_URL = "YOUR_GOOGLE_SCRIPT_URL_HERE";
-                if(GOOGLE_SCRIPT_URL !== "YOUR_GOOGLE_SCRIPT_URL_HERE") {
-                    fetch(GOOGLE_SCRIPT_URL, {
-                        method: "POST",
-                        mode: "no-cors",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify(orderPayload)
-                    }).catch(err => console.log(err));
-                }
+                // إرسال البيانات إلى Google Sheet (Feuille 3)
+                fetch(GOOGLE_SCRIPT_URL, {
+                    method: "POST",
+                    mode: "no-cors",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(orderPayload)
+                }).catch(err => console.log(err));
 
+                // تفعيل بيكسل فيسبوك (Purchase)
                 if(typeof fbq === 'function') {
                     fbq('track', 'Purchase', {
                         value: totalPrice,
@@ -911,12 +560,12 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
 
             document.getElementById('thankYouCustomerName').textContent = order.customerName;
-            document.getElementById('tyOfferName').textContent = currentOffer === 'vip' ? 'العرض الملكي VIP الكامل' : 'العرض البسيط';
+            document.getElementById('tyOfferName').textContent = order.offer;
             document.getElementById('tyTotalAmount').textContent = order.totalAmount.toLocaleString() + ' دج';
             document.getElementById('tyWilayaName').textContent = order.wilaya;
 
-            const WA_PHONE = "213555000000";
-            const waMsg = `السلام عليكم ورحمة الله، أنا ${order.customerName} من ولاية ${order.wilaya}. قمت للتو بطلب ساعة رولكس دايتونا (${order.offer}) بمبلغ إجمالي ${order.totalAmount} دج وأريد تأكيد طلبي لتسريع خروج الشحنة.`;
+            const WA_PHONE = "213542121829"; // رقم الواتساب الخاص بك
+            const waMsg = `سلام عليكم، أنا ${order.customerName} من ولاية ${order.wilaya}.\nطلب العرض: ${order.offer}\nالمجموع الصافي: ${order.totalAmount} دج\nأود تأكيد الطلب لشحنه اليوم.`;
             document.getElementById('whatsappConfirmBtn').href = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(waMsg)}`;
         }
     </script>
