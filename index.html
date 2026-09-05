@@ -126,9 +126,6 @@
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '880279101448547');
         fbq('track', 'PageView');
-
-        // TIKTOK PIXEL PLACEHOLDER
-        // (إذا كان لديك بيكسل تيك توك، استبدل الكود هنا)
     </script>
     <noscript>
         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=880279101448547&ev=PageView&noscript=1"/>
@@ -326,7 +323,7 @@
                     </div>
 
                     <div>
-                        <select id="custWilaya" required onchange="handleWilayaSelection()" class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 focus:outline-none transition-colors shadow-sm">
+                        <select id="custWilaya" required class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 focus:outline-none transition-colors shadow-sm">
                             <option value="">-- حدد ولايتك (58 ولاية جزائرية) * --</option>
                         </select>
                     </div>
@@ -510,30 +507,17 @@
                 submittedAt: new Date().toLocaleString('fr-FR', { timeZone: 'Africa/Algiers' })
             };
 
-            // إعدادات بوت التليغرام الخاص بك
-            const BOT_TOKEN = "8979352082:AAE5yPVwu6NDGVRAb95arPhpOyTDLh-2FfE";
-            const CHAT_ID = "5253167330";
-
-            // رابط قوقل سكريبت الخاص بك
-            const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzez5y_9dsOy3y0ONv4kqdiAz98o-l2mgsKFENxsZAqM-j1q5B4ASr7qrYflerEV3g/exec";
-
-            // إرسال إشعار تليغرام مباشر
-            const tgMessage = `👑 *طلب ساعة دايتونا جديد (Feuille 3)* 👑\n━━━━━━━━━━━━━━━━━━━━\n👤 *العميل:* ${orderPayload.customerName}\n📞 *الهاتف 1:* ${orderPayload.phone1}\n📱 *الهاتف 2:* ${orderPayload.phone2}\n📍 *الولاية:* ${orderPayload.wilaya}\n🏠 *العنوان:* ${orderPayload.commune}\n━━━━━━━━━━━━━━━━━━━━\n📦 *الباقة:* ${orderPayload.offer}\n💰 *المجموع الصافي:* ${orderPayload.totalAmount} دج\n📝 *ملاحظات:* ${orderPayload.notes}`;
+            // رابط قوقل سكريبت الخاص بك المربوط بالعملية
+            const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw2Vo6knkEt5DSxt3AfkttaXlOBq41rN4IYvUCF3_lP0fXWgeLhEJRk0nC_e9KqGts/exec";
 
             try {
-                fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ chat_id: CHAT_ID, text: tgMessage, parse_mode: "Markdown" })
-                }).catch(err => console.log(err));
-
-                // إرسال البيانات إلى Google Sheet (Feuille 3)
-                fetch(GOOGLE_SCRIPT_URL, {
+                // إرسال البيانات إلى Google Apps Script
+                await fetch(GOOGLE_SCRIPT_URL, {
                     method: "POST",
                     mode: "no-cors",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(orderPayload)
-                }).catch(err => console.log(err));
+                });
 
                 // تفعيل بيكسل فيسبوك (Purchase)
                 if(typeof fbq === 'function') {
@@ -548,8 +532,8 @@
 
             } catch (error) {
                 console.error("Order error", error);
-                btn.innerHTML = `<i class="fas fa-check-double ml-2 text-lg"></i> اضغط هنا لتأكيد حجزك الآن`;
-                btn.disabled = false;
+                // حتى في حالة وجود استجابة CORS يتم تحويل العميل للصفحة بنجاح
+                showThankYouPage(orderPayload);
             }
         }
 
