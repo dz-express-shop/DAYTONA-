@@ -315,10 +315,12 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
                         <div>
-                            <input type="tel" id="custPhone1" required dir="ltr" placeholder="05 / 06 / 07 XX XX XX XX (رقم الهاتف الأساسي) *" class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none transition-colors text-right shadow-sm">
+                            <input type="tel" id="custPhone1" required dir="ltr" placeholder="05 / 06 / 07 XX XX XX XX (رقم الهاتف الأساسي) *" class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none transition-colors text-right shadow-sm" oninput="validatePhoneLive(this, 'phone1Error')">
+                            <p id="phone1Error" class="hidden text-xs text-red-600 font-bold mt-1">⚠️ يرجى إدخال رقم هاتف جزائري صحيح (10 أرقام ويبدأ بـ 05 أو 06 أو 07)</p>
                         </div>
                         <div>
-                            <input type="tel" id="custPhone2" dir="ltr" placeholder="رقم هاتف ثانٍ لتسهيل الوصول إليك (اختياري)" class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none transition-colors text-right shadow-sm">
+                            <input type="tel" id="custPhone2" dir="ltr" placeholder="رقم هاتف ثانٍ لتسهيل الوصول إليك (اختياري)" class="w-full bg-white border border-gray-300 focus:border-rolex-emerald rounded-xl px-3.5 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none transition-colors text-right shadow-sm" oninput="validatePhoneLive(this, 'phone2Error', true)">
+                            <p id="phone2Error" class="hidden text-xs text-red-600 font-bold mt-1">⚠️ رقم الهاتف الثاني غير صحيح</p>
                         </div>
                     </div>
 
@@ -479,9 +481,48 @@
             }
         }, 1000);
 
+        // دالة التحقق من صحة الرقم الجزائري (10 أرقام وتبدأ بـ 05 أو 06 أو 07)
+        function isValidDZPhone(phone) {
+            const cleanPhone = phone.replace(/[\s\-]/g, '');
+            return /^(05|06|07)[0-9]{8}$/.test(cleanPhone);
+        }
+
+        function validatePhoneLive(inputEl, errorElId, isOptional = false) {
+            const val = inputEl.value.trim();
+            const errEl = document.getElementById(errorElId);
+
+            if (isOptional && val === "") {
+                errEl.classList.add('hidden');
+                inputEl.classList.remove('border-red-500');
+                return true;
+            }
+
+            if (!isValidDZPhone(val)) {
+                errEl.classList.remove('hidden');
+                inputEl.classList.add('border-red-500');
+                return false;
+            } else {
+                errEl.classList.add('hidden');
+                inputEl.classList.remove('border-red-500');
+                return true;
+            }
+        }
+
         // FORM SUBMISSION & API DISPATCH
         async function handleOrderSubmit(e) {
             e.preventDefault();
+
+            const phone1Input = document.getElementById('custPhone1');
+            const phone2Input = document.getElementById('custPhone2');
+
+            // إيقاف الإرسال إذا كان رقم الهاتف الرئيسي غير صحيح
+            const isPhone1Valid = validatePhoneLive(phone1Input, 'phone1Error', false);
+            const isPhone2Valid = validatePhoneLive(phone2Input, 'phone2Error', true);
+
+            if (!isPhone1Valid || !isPhone2Valid) {
+                phone1Input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return;
+            }
 
             const btn = document.getElementById('submitOrderBtn');
             btn.innerHTML = `<i class="fas fa-spinner fa-spin ml-2"></i> جاري تأكيد حجزك في النظام...`;
@@ -499,19 +540,17 @@
                 shippingPrice: offerData.shipping,
                 totalAmount: totalPrice,
                 customerName: document.getElementById('custName').value.trim(),
-                phone1: document.getElementById('custPhone1').value.trim(),
-                phone2: document.getElementById('custPhone2').value.trim() || "غير مذكور",
+                phone1: phone1Input.value.trim().replace(/[\s\-]/g, ''),
+                phone2: phone2Input.value.trim().replace(/[\s\-]/g, '') || "غير مذكور",
                 wilaya: document.getElementById('custWilaya').value,
                 commune: document.getElementById('custCommune').value.trim(),
                 notes: document.getElementById('custRemarque').value.trim() || "-",
                 submittedAt: new Date().toLocaleString('fr-FR', { timeZone: 'Africa/Algiers' })
             };
 
-            // رابط قوقل سكريبت الخاص بك المربوط بالعملية
             const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbw2Vo6knkEt5DSxt3AfkttaXlOBq41rN4IYvUCF3_lP0fXWgeLhEJRk0nC_e9KqGts/exec";
 
             try {
-                // إرسال البيانات إلى Google Apps Script
                 await fetch(GOOGLE_SCRIPT_URL, {
                     method: "POST",
                     mode: "no-cors",
@@ -519,7 +558,6 @@
                     body: JSON.stringify(orderPayload)
                 });
 
-                // تفعيل بيكسل فيسبوك (Purchase)
                 if(typeof fbq === 'function') {
                     fbq('track', 'Purchase', {
                         value: totalPrice,
@@ -532,7 +570,6 @@
 
             } catch (error) {
                 console.error("Order error", error);
-                // حتى في حالة وجود استجابة CORS يتم تحويل العميل للصفحة بنجاح
                 showThankYouPage(orderPayload);
             }
         }
@@ -548,7 +585,7 @@
             document.getElementById('tyTotalAmount').textContent = order.totalAmount.toLocaleString() + ' دج';
             document.getElementById('tyWilayaName').textContent = order.wilaya;
 
-            const WA_PHONE = "213542121829"; // رقم الواتساب الخاص بك
+            const WA_PHONE = "213542121829";
             const waMsg = `سلام عليكم، أنا ${order.customerName} من ولاية ${order.wilaya}.\nطلب العرض: ${order.offer}\nالمجموع الصافي: ${order.totalAmount} دج\nأود تأكيد الطلب لشحنه اليوم.`;
             document.getElementById('whatsappConfirmBtn').href = `https://wa.me/${WA_PHONE}?text=${encodeURIComponent(waMsg)}`;
         }
