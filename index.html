@@ -89,9 +89,10 @@
             100% { transform: scale(1); box-shadow: 0 0 15px #25D366; }
         }
 
+        /* الإشعار العلوي التفاعلي (Social Proof Notification) */
         .top-notification {
             position: fixed;
-            top: -130px;
+            top: -140px;
             left: 50%;
             transform: translateX(-50%);
             z-index: 9999;
@@ -133,11 +134,12 @@
 </head>
 <body class="selection:bg-gold-500 selection:text-white pb-32">
 
-    <div id="topNotification" class="top-notification bg-white/95 border border-rolex-emerald/30 backdrop-blur-2xl p-3.5 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.12)] flex items-center justify-between">
+    <!-- 🌟 الإشعار المنبثق العلوي المتغير تلقائياً (Social Proof) -->
+    <div id="topNotification" class="top-notification bg-white/95 border border-rolex-emerald/30 backdrop-blur-2xl p-3.5 rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.15)] flex items-center justify-between">
         <div class="flex items-center space-x-3 space-x-reverse">
             <div class="relative">
                 <div class="w-11 h-11 rounded-full bg-rolex-emerald/10 border-2 border-gold-500/60 flex items-center justify-center text-rolex-emerald shadow-inner">
-                    <i class="fas fa-crown text-sm"></i>
+                    <i class="fas fa-shopping-bag text-sm"></i>
                 </div>
                 <span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-emerald-500 border-2 border-white rounded-full"></span>
             </div>
@@ -146,7 +148,7 @@
                 <p class="text-[12px] font-bold text-gray-800 tracking-tight" id="notifAction">حجز العرض الملكي VIP الكامل (9900 دج)</p>
             </div>
         </div>
-        <span class="text-[10px] text-gray-500 bg-gray-100 px-2.5 py-1 rounded-full border border-gray-200 flex-shrink-0" id="notifTime">منذ 3 د</span>
+        <span class="text-[10px] text-gray-500 bg-gray-100 px-2.5 py-1 rounded-full border border-gray-200 flex-shrink-0" id="notifTime">منذ 2 د</span>
     </div>
 
     <header class="bg-gradient-to-r from-rolex-emerald via-rolex-900 to-rolex-emerald text-white border-b border-gold-500/30 py-2.5 px-3 sticky top-0 z-40 backdrop-blur-xl shadow-sm">
@@ -481,7 +483,39 @@
             }
         }, 1000);
 
-        // دالة التحقق من صحة الرقم الجزائري (10 أرقام وتبدأ بـ 05 أو 06 أو 07)
+        // 🌟 إشعار الطلبات المنبثق من الأعلى (Social Proof Engine)
+        const socialProofData = [
+            { name: "أمين من سطيف (حي الهضاب)", action: "حجز العرض الملكي VIP الكامل (9900 دج)", time: "منذ دقيقتين" },
+            { name: "كريم من وهران (عين الترك)", action: "حجز العرض الملكي VIP الكامل (9900 دج)", time: "منذ 4 دقائق" },
+            { name: "ياسين من قسنطينة (زواغي)", action: "حجز العرض البسيط (9600 دج)", time: "منذ دقيقة واحدة" },
+            { name: "حمزة من الجزائر العاصمة (الشراقة)", action: "حجز العرض الملكي VIP الكامل (9900 دج)", time: "منذ 6 دقائق" },
+            { name: "بلال من عنابة (سيدي عمار)", action: "حجز العرض الملكي VIP الكامل (9900 دج)", time: "منذ 3 دقائق" },
+            { name: "عمر من باتنة (حي النصر)", action: "حجز العرض الملكي VIP الكامل (9900 دج)", time: "منذ 5 دقائق" }
+        ];
+
+        function triggerSocialProof() {
+            const notif = document.getElementById('topNotification');
+            if (!notif) return;
+            
+            let index = 0;
+            setInterval(() => {
+                const item = socialProofData[index];
+                document.getElementById('notifPerson').textContent = item.name;
+                document.getElementById('notifAction').textContent = item.action;
+                document.getElementById('notifTime').textContent = item.time;
+                
+                notif.classList.add('show');
+                
+                setTimeout(() => {
+                    notif.classList.remove('show');
+                }, 4000);
+                
+                index = (index + 1) % socialProofData.length;
+            }, 8500);
+        }
+        setTimeout(triggerSocialProof, 3000);
+
+        // التحقق من صحة رقم الهاتف الجزائري
         function isValidDZPhone(phone) {
             const cleanPhone = phone.replace(/[\s\-]/g, '');
             return /^(05|06|07)[0-9]{8}$/.test(cleanPhone);
@@ -508,14 +542,13 @@
             }
         }
 
-        // FORM SUBMISSION & API DISPATCH
+        // إرسال الطلب ومعالجة البيانات
         async function handleOrderSubmit(e) {
             e.preventDefault();
 
             const phone1Input = document.getElementById('custPhone1');
             const phone2Input = document.getElementById('custPhone2');
 
-            // إيقاف الإرسال إذا كان رقم الهاتف الرئيسي غير صحيح
             const isPhone1Valid = validatePhoneLive(phone1Input, 'phone1Error', false);
             const isPhone2Valid = validatePhoneLive(phone2Input, 'phone2Error', true);
 
@@ -534,17 +567,17 @@
             const orderPayload = {
                 source: "tapyach_watch",
                 brand: "TAPYACH",
-                model: "Rolex Cosmograph Daytona",
-                offer: offerData.title,
-                productPrice: offerData.price,
-                shippingPrice: offerData.shipping,
-                totalAmount: totalPrice,
                 customerName: document.getElementById('custName').value.trim(),
                 phone1: phone1Input.value.trim().replace(/[\s\-]/g, ''),
                 phone2: phone2Input.value.trim().replace(/[\s\-]/g, '') || "غير مذكور",
                 wilaya: document.getElementById('custWilaya').value,
                 commune: document.getElementById('custCommune').value.trim(),
+                offer: offerData.title,
+                product: offerData.title,
+                totalAmount: totalPrice,
+                prix: totalPrice,
                 notes: document.getElementById('custRemarque').value.trim() || "-",
+                remarque: document.getElementById('custRemarque').value.trim() || "-",
                 submittedAt: new Date().toLocaleString('fr-FR', { timeZone: 'Africa/Algiers' })
             };
 
