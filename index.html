@@ -131,6 +131,16 @@
     <noscript>
         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=880279101448547&ev=PageView&noscript=1"/>
     </noscript>
+
+    <!-- TIKTOK PIXEL (CV3LFNRC77UFV56GDU30) -->
+    <script>
+        !function (w, d, t) {
+            w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var e=0;e<ttq.methods.length;e++)ttq.setAndDefer(ttq,ttq.methods[e]);ttq.instance=function(t){for(var e=ttq.methods[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+
+            ttq.load('CV3LFNRC77UFV56GDU30');
+            ttq.page();
+        }(window, document, 'ttq');
+    </script>
 </head>
 <body class="selection:bg-gold-500 selection:text-white pb-32">
 
@@ -616,11 +626,21 @@
                     body: JSON.stringify(orderPayload)
                 });
 
+                // Meta Pixel Track
                 if(typeof fbq === 'function') {
                     fbq('track', 'Purchase', {
                         value: totalPrice,
                         currency: 'DZD',
                         content_name: 'Rolex Daytona VIP'
+                    });
+                }
+
+                // TikTok Pixel Track (CompletePayment Event)
+                if(typeof ttq !== 'undefined') {
+                    ttq.track('CompletePayment', {
+                        content_name: 'Rolex Daytona VIP',
+                        value: totalPrice,
+                        currency: 'DZD'
                     });
                 }
 
